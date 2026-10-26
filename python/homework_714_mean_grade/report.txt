@@ -1,0 +1,186 @@
+Необязательное ДЗ mean_grade. Урок 714, теория 3288, задание6 со звёздочкой.
+Дата фактической локальной проверки 2026-10-26T21:52:04.009607+00:00
+Источник https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=714&stepId=3288
+Задание 6 со звёздочкой. Среднее целых оценок из строки через пробел, округление до двух знаков; для пустой строки 0.0. Найти и исправить две ошибки, сохранить тест-кейсы.
+
+Контракт решения
+mean_grade принимает строку целых оценок с пробельными разделителями и возвращает float, округлённый round(..., 2). Пустая строка или только пробелы дают 0.0. Диапазон 2–5 и ответ на нечисловые оценки здесь не заданы. Внешний запуск печатает результат функции, а не строку из двух фиксированных десятичных знаков.
+
+Найденные причины и исправление
+Исходное // отбрасывает дробную часть среднего, поэтому заменено на /. Отдельная ветка для пустого списка оценок возвращает 0.0 до деления и устраняет ZeroDivisionError. Это другой контракт, чем редактор 714/3290, который возвращает строку и иначе обрабатывает пустой ввод.
+
+Файл /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade/solution.py
+Пути в отчёте обезличены. /home/default заменяет реальный домашний каталог пользователя; файлы на компьютере не перемещались.
+Фактический интерпретатор Python 3.14.7
+Для всех проверок PYTHONDONTWRITEBYTECODE=1; PYTEST_DISABLE_PLUGIN_AUTOLOAD=1; pytest cache отключён.
+
+Таблица тест-кейсов
+Сценарий | stdin repr | ожидаемый stdout repr
+Одинаковые оценки | '5 5\n' | '5.0\n'
+Дробное среднее | '5 4\n' | '4.5\n'
+Округление до двух знаков | '5 4 4\n' | '4.33\n'
+Пустая строка | '\n' | '0.0\n'
+Пробельные разделители | ' 5  4\t4 \n' | '4.33\n'
+Одна оценка | '3\n' | '3.0\n'
+
+Исходная ошибочная функция из условия
+```python
+def mean_grade(s):
+    grades = list(map(int, s.split()))
+    return round(sum(grades) // len(grades), 2)
+```
+
+Фактическая проверка чувствительности тестов
+В отдельном временном каталоге функция заменена исходной ошибочной заготовкой, тесты сохранены из итогового решения.
+Ожидается ненулевой код завершения pytest и обнаруженные ошибки заготовки. Эти отказы относятся только к исходной версии.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /tmp/skillup_optional_homework_review/baseline/homework_714_mean_grade
+Фактический код завершения 1
+Фактический stdout repr
+'.FFFF.                                                                   [100%]\n=================================== FAILURES ===================================\n_________________________ test_mean_fractional_result __________________________\n\n    def test_mean_fractional_result() -> None:\n>       assert mean_grade("5 4") == 4.5\nE       AssertionError: assert 4 == 4.5\nE        +  where 4 = mean_grade(\'5 4\')\n\nsolution.py:11: AssertionError\n______________________________ test_mean_rounding ______________________________\n\n    def test_mean_rounding() -> None:\n>       assert mean_grade("5 4 4") == 4.33\nE       AssertionError: assert 4 == 4.33\nE        +  where 4 = mean_grade(\'5 4 4\')\n\nsolution.py:15: AssertionError\n_____________________________ test_mean_empty_text _____________________________\n\n    def test_mean_empty_text() -> None:\n>       assert mean_grade("") == 0.0\n               ^^^^^^^^^^^^^^\n\nsolution.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ns = \'\'\n\n    def mean_grade(s):\n        grades = list(map(int, s.split()))\n>       return round(sum(grades) // len(grades), 2)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       ZeroDivisionError: division by zero\n\nsolution.py:3: ZeroDivisionError\n_______________________ test_mean_whitespace_separators ________________________\n\n    def test_mean_whitespace_separators() -> None:\n>       assert mean_grade(" 5  4\\t4 ") == 4.33\nE       AssertionError: assert 4 == 4.33\nE        +  where 4 = mean_grade(\' 5  4\\t4 \')\n\nsolution.py:23: AssertionError\n=========================== short test summary info ============================\nFAILED solution.py::test_mean_fractional_result - AssertionError: assert 4 ==...\nFAILED solution.py::test_mean_rounding - AssertionError: assert 4 == 4.33\nFAILED solution.py::test_mean_empty_text - ZeroDivisionError: division by zero\nFAILED solution.py::test_mean_whitespace_separators - AssertionError: assert ...\n4 failed, 2 passed in 0.02s\n'
+Представление repr сохраняет все символы исходного потока, включая конечные пробелы и переводы строк.
+Фактический stderr
+```text
+(пусто)
+```
+
+Итоговый код
+```python
+def mean_grade(grades_text: str) -> float:
+    grades = list(map(int, grades_text.split()))
+    if not grades:
+        return 0.0
+    return round(sum(grades) / len(grades), 2)
+
+
+def test_mean_identical_marks() -> None:
+    assert mean_grade("5 5") == 5.0
+
+
+def test_mean_fractional_result() -> None:
+    assert mean_grade("5 4") == 4.5
+
+
+def test_mean_rounding() -> None:
+    assert mean_grade("5 4 4") == 4.33
+
+
+def test_mean_empty_text() -> None:
+    assert mean_grade("") == 0.0
+
+
+def test_mean_whitespace_separators() -> None:
+    assert mean_grade(" 5  4\t4 ") == 4.33
+
+
+def test_mean_single_mark() -> None:
+    assert mean_grade("3") == 3.0
+
+
+if __name__ == "__main__":
+    print(mean_grade(input()))
+```
+
+Проверка исправленного файла pytest
+Ожидается 6 passed, код0 и пустой stderr. В каждом test_ ровно один assert.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade
+Фактический код завершения 0
+Фактический stdout
+```text
+......                                                                   [100%]
+6 passed in 0.02s
+```
+Фактический stderr
+```text
+(пусто)
+```
+
+Сценарий Одинаковые оценки
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade
+Фактический stdin repr '5 5\n'
+Ожидаемый stdout repr '5.0\n'
+Фактический stdout repr '5.0\n'
+Фактический stdout
+```text
+5.0
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Дробное среднее
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade
+Фактический stdin repr '5 4\n'
+Ожидаемый stdout repr '4.5\n'
+Фактический stdout repr '4.5\n'
+Фактический stdout
+```text
+4.5
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Округление до двух знаков
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade
+Фактический stdin repr '5 4 4\n'
+Ожидаемый stdout repr '4.33\n'
+Фактический stdout repr '4.33\n'
+Фактический stdout
+```text
+4.33
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Пустая строка
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade
+Фактический stdin repr '\n'
+Ожидаемый stdout repr '0.0\n'
+Фактический stdout repr '0.0\n'
+Фактический stdout
+```text
+0.0
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Пробельные разделители
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade
+Фактический stdin repr ' 5  4\t4 \n'
+Ожидаемый stdout repr '4.33\n'
+Фактический stdout repr '4.33\n'
+Фактический stdout
+```text
+4.33
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Одна оценка
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_714_mean_grade
+Фактический stdin repr '3\n'
+Ожидаемый stdout repr '3.0\n'
+Фактический stdout repr '3.0\n'
+Фактический stdout
+```text
+3.0
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Итог локальной проверки 6 pytest и 6 отдельных процессов stdin пройдены.
+Процессы с исходной ошибочной заготовкой учитываются отдельно, их отказ является ожидаемым доказательством чувствительности тестов.
+Прочтение теории в LMS не означает выполнения этого ДЗ. Отдельного балла и статуса приёмки для функции нет. Готовность здесь только локальная.
+На момент этой подготовки Git, публикация и отправка в LMS не выполнялись. Изменения ранее принятых работ не производились.

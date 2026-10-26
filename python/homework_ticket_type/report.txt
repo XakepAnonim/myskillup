@@ -1,0 +1,114 @@
+Обязательное домашнее задание ticket_type
+Урок 644, теоретический шаг 2847
+https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=644&stepId=2847
+Локальная проверка 2026-10-26T21:53:40.066340+00:00
+В отображаемых путях имя пользователя заменено на default; остальной вывод фактический.
+Условие курса
+До 7 лет "бесплатно", 7-17 "детский", 18-64 "полный", от 65 "льготный". Таблица не менее 8 случаев, классы, границы и некорректный ввод, assert.
+Выбранный контракт в местах, не определённых условием
+Выбранный контракт для неуточнённого поведения: функция принимает целый возраст; отрицательный возраст возвращает "ошибка". CLI читает одну строку через int(), нецелая запись, нечисловой текст, пустая строка и EOF дают "ошибка". Верхний возраст не ограничен условием.
+Механизм сдачи
+Домашние разделы содержат общую инструкцию загрузить файлы в репозиторий / СДО. Для урока756 также названы myskillup.ru и репозиторий. Отдельная форма, редактор или оценочный шаг именно этой дополнительной функции в сохранённой теории не указаны.
+Статус: локально проверено; LMS не подтверждал; конкретный отдельный путь сдачи этой домашней функции в теории не указан. Git и публикация на этапе подготовки не выполнялись.
+Отдельные принятые Code-решения не изменялись. Этот отчёт не утверждает принятие или зачёт в LMS.
+Файл /home/default/PycharmProjects/skill_up/python/homework_ticket_type/solution.py
+PYTHONDONTWRITEBYTECODE=1
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python --version
+Фактический STDOUT repr 'Python 3.14.7\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -c 'import sys; print(sys.executable)'
+Фактический STDOUT repr '/home/default/PycharmProjects/skill_up/.venv/bin/python\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Фактический код сохранённого файла
+```python
+def ticket_type(age: int) -> str:
+    if age < 0:
+        return "ошибка"
+    if age < 7:
+        return "бесплатно"
+    if age < 18:
+        return "детский"
+    if age < 65:
+        return "полный"
+    return "льготный"
+
+
+# Проверки по таблице классов и границ.
+def test_negative() -> None:
+    assert ticket_type(-1) == 'ошибка'
+
+
+def test_zero() -> None:
+    assert ticket_type(0) == 'бесплатно'
+
+
+def test_below_seven() -> None:
+    assert ticket_type(6) == 'бесплатно'
+
+
+def test_seven() -> None:
+    assert ticket_type(7) == 'детский'
+
+
+def test_seventeen() -> None:
+    assert ticket_type(17) == 'детский'
+
+
+def test_eighteen() -> None:
+    assert ticket_type(18) == 'полный'
+
+
+def test_sixty_four() -> None:
+    assert ticket_type(64) == 'полный'
+
+
+def test_sixty_five() -> None:
+    assert ticket_type(65) == 'льготный'
+
+
+def test_older() -> None:
+    assert ticket_type(100) == 'льготный'
+
+
+if __name__ == "__main__":
+    try:
+        age = int(input())
+    except (ValueError, EOFError):
+        print("ошибка")
+    else:
+        print(ticket_type(age))
+```
+
+Проверки функции через assert
+Каждая test_функция содержит ровно один assert. Для числовых результатов bmi используется math.isclose; ожидаемый отказ None проверяется отдельно.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_ticket_type
+Фактический STDOUT repr '.........                                                                [100%]\n9 passed in 0.02s\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Таблица реальных запусков stdin/stdout
+Ожидания записаны до запусков и показаны отдельно от захваченных фактических потоков. repr сохраняет переводы строк, пустые строки и табуляцию.
+№ | Класс или граница | Вход repr | Ожидаемый stdout repr | Фактический stdout repr | Фактический stderr repr | exit code | Статус
+--- | --- | --- | --- | --- | --- | --- | ---
+1 | Отрицательный возраст | '-1\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+2 | Нулевая граница | '0\n' | 'бесплатно\n' | 'бесплатно\n' | '' | 0 | ПРОЙДЕНА
+3 | Граница 6 | '6\n' | 'бесплатно\n' | 'бесплатно\n' | '' | 0 | ПРОЙДЕНА
+4 | Граница 7 | '7\n' | 'детский\n' | 'детский\n' | '' | 0 | ПРОЙДЕНА
+5 | Граница 17 | '17\n' | 'детский\n' | 'детский\n' | '' | 0 | ПРОЙДЕНА
+6 | Граница 18 | '18\n' | 'полный\n' | 'полный\n' | '' | 0 | ПРОЙДЕНА
+7 | Граница 64 | '64\n' | 'полный\n' | 'полный\n' | '' | 0 | ПРОЙДЕНА
+8 | Граница 65 | '65\n' | 'льготный\n' | 'льготный\n' | '' | 0 | ПРОЙДЕНА
+9 | Возраст выше 65 | '100\n' | 'льготный\n' | 'льготный\n' | '' | 0 | ПРОЙДЕНА
+10 | Нечисловой ввод | 'abc\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+11 | Дробный возраст | '7.5\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+12 | Пустая строка | '\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+13 | EOF | '' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+
+Команда для каждого запуска таблицы /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_ticket_type/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_ticket_type
+Результат 9 тестов pytest и 13 реальных процессов stdin/stdout пройдены. Все коды завершения 0, STDERR пуст.
+Git, сеть, установки пакетов, запуск IDE и действия в LMS не выполнялись.

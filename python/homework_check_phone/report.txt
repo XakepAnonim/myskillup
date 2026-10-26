@@ -1,0 +1,149 @@
+Обязательное домашнее задание check_phone
+Урок 756, теоретический шаг 3571
+https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=756&stepId=3571
+Локальная проверка 2026-10-26T21:53:44.724486+00:00
+В отображаемых путях имя пользователя заменено на default; остальной вывод фактический.
+Условие курса
+Номер +7XXXXXXXXXX либо 8XXXXXXXXXX, ровно 10 цифр после кода. Пробелы и дефисы игнорируются. Не менее 8 случаев, классы и границы 9/10/11 цифр; test_... и реальный pytest -q либо мини-запускатель.
+Выбранный контракт в местах, не определённых условием
+Выбранный контракт: функция возвращает bool, CLI печатает True/False. Цифрами считаются ASCII 0-9 через string.digits, игнорируются обычный пробел U+0020 и дефис U+002D во всей строке. Скобки, табуляция, иные префиксы и иные цифровые символы не принимаются. При EOF проверяется пустая строка. Эти уточнения алфавита и результата отдельно не установлены курсом.
+Механизм сдачи
+Домашние разделы содержат общую инструкцию загрузить файлы в репозиторий / СДО. Для урока756 также названы myskillup.ru и репозиторий. Отдельная форма, редактор или оценочный шаг именно этой дополнительной функции в сохранённой теории не указаны.
+Статус: локально проверено; LMS не подтверждал; конкретный отдельный путь сдачи этой домашней функции в теории не указан. Git и публикация на этапе подготовки не выполнялись.
+Отдельные принятые Code-решения не изменялись. Этот отчёт не утверждает принятие или зачёт в LMS.
+Файл /home/default/PycharmProjects/skill_up/python/homework_check_phone/solution.py
+PYTHONDONTWRITEBYTECODE=1
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python --version
+Фактический STDOUT repr 'Python 3.14.7\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -c 'import sys; print(sys.executable)'
+Фактический STDOUT repr '/home/default/PycharmProjects/skill_up/.venv/bin/python\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Фактический код сохранённого файла
+```python
+from string import digits
+
+
+def check_phone(phone_number: str) -> bool:
+    normalized_phone = phone_number.replace(" ", "").replace("-", "")
+    if normalized_phone.startswith("+7"):
+        subscriber_number = normalized_phone[2:]
+    elif normalized_phone.startswith("8"):
+        subscriber_number = normalized_phone[1:]
+    else:
+        return False
+    return len(subscriber_number) == 10 and all(
+        character in digits for character in subscriber_number
+    )
+
+
+# Проверки по таблице классов и границ.
+def test_plus_seven() -> None:
+    assert check_phone('+71234567890') is True
+
+
+def test_eight() -> None:
+    assert check_phone('81234567890') is True
+
+
+def test_formatted_plus_seven() -> None:
+    assert check_phone('+7 123-456-78-90') is True
+
+
+def test_formatted_eight() -> None:
+    assert check_phone('8 123-456-78-90') is True
+
+
+def test_plus_seven_nine_digits() -> None:
+    assert check_phone('+7123456789') is False
+
+
+def test_plus_seven_eleven_digits() -> None:
+    assert check_phone('+712345678901') is False
+
+
+def test_eight_nine_digits() -> None:
+    assert check_phone('8123456789') is False
+
+
+def test_eight_eleven_digits() -> None:
+    assert check_phone('812345678901') is False
+
+
+def test_wrong_prefix() -> None:
+    assert check_phone('+81234567890') is False
+
+
+def test_missing_plus() -> None:
+    assert check_phone('71234567890') is False
+
+
+def test_letter() -> None:
+    assert check_phone('+71234A67890') is False
+
+
+def test_empty() -> None:
+    assert check_phone('') is False
+
+
+def test_parentheses() -> None:
+    assert check_phone('+7(123)4567890') is False
+
+
+def test_unicode_digits() -> None:
+    assert check_phone('+7١٢٣٤٥٦٧٨٩٠') is False
+
+
+def test_tab() -> None:
+    assert check_phone('+7\t1234567890') is False
+
+
+def test_hyphens_ignored() -> None:
+    assert check_phone('8--1234567890') is True
+
+
+if __name__ == "__main__":
+    try:
+        phone_number = input()
+    except EOFError:
+        phone_number = ""
+    print(check_phone(phone_number))
+```
+
+Проверки функции через assert
+Каждая test_функция содержит ровно один assert. Для числовых результатов bmi используется math.isclose; ожидаемый отказ None проверяется отдельно.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_check_phone
+Фактический STDOUT repr '................                                                         [100%]\n16 passed in 0.02s\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Таблица реальных запусков stdin/stdout
+Ожидания записаны до запусков и показаны отдельно от захваченных фактических потоков. repr сохраняет переводы строк, пустые строки и табуляцию.
+№ | Класс или граница | Вход repr | Ожидаемый stdout repr | Фактический stdout repr | Фактический stderr repr | exit code | Статус
+--- | --- | --- | --- | --- | --- | --- | ---
+1 | Код +7, 10 цифр | '+71234567890\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+2 | Код 8, 10 цифр | '81234567890\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+3 | Код +7 с пробелами и дефисами | '+7 123-456-78-90\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+4 | Код 8 с пробелами и дефисами | '8 123-456-78-90\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+5 | Код +7, 9 цифр | '+7123456789\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+6 | Код +7, 11 цифр | '+712345678901\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+7 | Код 8, 9 цифр | '8123456789\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+8 | Код 8, 11 цифр | '812345678901\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+9 | Иной код +8 | '+81234567890\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+10 | 7 без плюса | '71234567890\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+11 | Буква вместо цифры | '+71234A67890\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+12 | Пустой номер | '\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+13 | Скобки не игнорируются | '+7(123)4567890\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+14 | Unicode-цифры по выбранному контракту | '+7١٢٣٤٥٦٧٨٩٠\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+15 | Табуляция не игнорируется | '+7\t1234567890\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+16 | Все дефисы игнорируются | '8--1234567890\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+17 | EOF | '' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+
+Команда для каждого запуска таблицы /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_check_phone/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_check_phone
+Результат 16 тестов pytest и 17 реальных процессов stdin/stdout пройдены. Все коды завершения 0, STDERR пуст.
+Git, сеть, установки пакетов, запуск IDE и действия в LMS не выполнялись.

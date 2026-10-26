@@ -1,0 +1,139 @@
+Обязательное домашнее задание bmi
+Урок 714, теоретический шаг 3288
+https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=714&stepId=3288
+Локальная проверка 2026-10-26T21:53:41.918347+00:00
+В отображаемых путях имя пользователя заменено на default; остальной вывод фактический.
+Условие курса
+Индекс массы тела weight_kg / (height_cm / 100)^2, округление до одного знака. Минимум 6 случаев, обычные значения, дробный ввод с запятой, рост 0 и отрицательный вес. Числовые assert с math.isclose.
+Выбранный контракт в местах, не определённых условием
+Выбранный контракт для ошибок: функция возвращает None при неположительном или неконечном весе/росте и при непредставимом конечном результате. На корректных аргументах возвращается float с round(..., 1). CLI читает два числа через пробел, точка и запятая допустимы, печатает результат с одним знаком либо "ошибка". Клинические категории BMI не добавлялись.
+Механизм сдачи
+Домашние разделы содержат общую инструкцию загрузить файлы в репозиторий / СДО. Для урока756 также названы myskillup.ru и репозиторий. Отдельная форма, редактор или оценочный шаг именно этой дополнительной функции в сохранённой теории не указаны.
+Статус: локально проверено; LMS не подтверждал; конкретный отдельный путь сдачи этой домашней функции в теории не указан. Git и публикация на этапе подготовки не выполнялись.
+Отдельные принятые Code-решения не изменялись. Этот отчёт не утверждает принятие или зачёт в LMS.
+Файл /home/default/PycharmProjects/skill_up/python/homework_bmi/solution.py
+PYTHONDONTWRITEBYTECODE=1
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python --version
+Фактический STDOUT repr 'Python 3.14.7\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -c 'import sys; print(sys.executable)'
+Фактический STDOUT repr '/home/default/PycharmProjects/skill_up/.venv/bin/python\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Фактический код сохранённого файла
+```python
+from math import isclose, isfinite
+from typing import Optional
+
+
+def bmi(weight_kg: float, height_cm: float) -> Optional[float]:
+    if not isfinite(weight_kg) or not isfinite(height_cm):
+        return None
+    if weight_kg <= 0 or height_cm <= 0:
+        return None
+    height_m = height_cm / 100
+    try:
+        body_mass_index = weight_kg / (height_m * height_m)
+    except ZeroDivisionError:
+        return None
+    if not isfinite(body_mass_index):
+        return None
+    return round(body_mass_index, 1)
+
+
+# Проверки по таблице классов и границ.
+def test_usual() -> None:
+    assert isclose(bmi(70, 175), 22.9)
+
+
+def test_second_usual() -> None:
+    assert isclose(bmi(60, 160), 23.4)
+
+
+def test_third_usual() -> None:
+    assert isclose(bmi(80, 180), 24.7)
+
+
+def test_fractional() -> None:
+    assert isclose(bmi(65.5, 172.5), 22.0)
+
+
+def test_ten() -> None:
+    assert isclose(bmi(40, 200), 10.0)
+
+
+def test_twenty_five() -> None:
+    assert isclose(bmi(100, 200), 25.0)
+
+
+def test_zero_height() -> None:
+    assert bmi(70, 0) is None
+
+
+def test_negative_weight() -> None:
+    assert bmi(-70, 175) is None
+
+
+def test_zero_weight() -> None:
+    assert bmi(0, 175) is None
+
+
+def test_negative_height() -> None:
+    assert bmi(70, -175) is None
+
+
+def test_nan_weight() -> None:
+    assert bmi(float("nan"), 175) is None
+
+
+if __name__ == "__main__":
+    try:
+        weight_text, height_text = input().split()
+        weight_kg = float(weight_text.replace(",", "."))
+        height_cm = float(height_text.replace(",", "."))
+    except (ValueError, EOFError):
+        print("ошибка")
+    else:
+        body_mass_index = bmi(weight_kg, height_cm)
+        if body_mass_index is None:
+            print("ошибка")
+        else:
+            print(f"{body_mass_index:.1f}")
+```
+
+Проверки функции через assert
+Каждая test_функция содержит ровно один assert. Для числовых результатов bmi используется math.isclose; ожидаемый отказ None проверяется отдельно.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_bmi
+Фактический STDOUT repr '...........                                                              [100%]\n11 passed in 0.02s\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Таблица реальных запусков stdin/stdout
+Ожидания записаны до запусков и показаны отдельно от захваченных фактических потоков. repr сохраняет переводы строк, пустые строки и табуляцию.
+№ | Класс или граница | Вход repr | Ожидаемый stdout repr | Фактический stdout repr | Фактический stderr repr | exit code | Статус
+--- | --- | --- | --- | --- | --- | --- | ---
+1 | Обычные значения 70/175 | '70 175\n' | '22.9\n' | '22.9\n' | '' | 0 | ПРОЙДЕНА
+2 | Обычные значения 60/160 | '60 160\n' | '23.4\n' | '23.4\n' | '' | 0 | ПРОЙДЕНА
+3 | Обычные значения 80/180 | '80 180\n' | '24.7\n' | '24.7\n' | '' | 0 | ПРОЙДЕНА
+4 | Дробный ввод с запятой | '65,5 172,5\n' | '22.0\n' | '22.0\n' | '' | 0 | ПРОЙДЕНА
+5 | Результат 10.0 | '40 200\n' | '10.0\n' | '10.0\n' | '' | 0 | ПРОЙДЕНА
+6 | Результат 25.0 | '100 200\n' | '25.0\n' | '25.0\n' | '' | 0 | ПРОЙДЕНА
+7 | Рост 0 | '70 0\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+8 | Отрицательный вес | '-70 175\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+9 | Нулевой вес | '0 175\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+10 | Отрицательный рост | '70 -175\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+11 | Неконечный вес | 'nan 175\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+12 | Неконечный рост | '70 inf\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+13 | Не число | 'abc 175\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+14 | Не хватает поля | '70\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+15 | Лишнее поле | '70 175 1\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+16 | Пустой ввод | '\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+17 | EOF | '' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+
+Команда для каждого запуска таблицы /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_bmi/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_bmi
+Результат 11 тестов pytest и 17 реальных процессов stdin/stdout пройдены. Все коды завершения 0, STDERR пуст.
+Git, сеть, установки пакетов, запуск IDE и действия в LMS не выполнялись.

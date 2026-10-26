@@ -1,0 +1,253 @@
+Необязательное ДЗ ticket. Урок 736, теория 3344, задание6 со звёздочкой.
+Дата фактической локальной проверки 2026-10-26T21:52:04.009607+00:00
+Источник https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=736&stepId=3344
+Задание 6 со звёздочкой. До 7 лет бесплатно, 7–17 детский, 18–64 взрослый, с 65 льготный. Отрицательный возраст даёт ошибку. Найти две ошибки, проверить каждую ветку и границу.
+
+Контракт решения
+ticket принимает целочисленный возраст и возвращает одну из строк бесплатно/детский/взрослый/льготный/ошибка. Внешний запуск читает один целочисленный возраст и печатает категорию. Разбор произвольного нечислового ввода условием не установлен. Здесь требуется взрослый, а не полный из отдельного обязательного ticket_type.
+
+Найденные причины и исправление
+Исходная первая ветка ошибочно принимала отрицательный возраст как бесплатный, поэтому добавлен отказ до возрастных категорий. Условие age <= 18 относило 18 лет к детскому билету; исправленная граница age < 18.
+
+Файл /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Пути в отчёте обезличены. /home/default заменяет реальный домашний каталог пользователя; файлы на компьютере не перемещались.
+Фактический интерпретатор Python 3.14.7
+Для всех проверок PYTHONDONTWRITEBYTECODE=1; PYTEST_DISABLE_PLUGIN_AUTOLOAD=1; pytest cache отключён.
+
+Таблица тест-кейсов
+Сценарий | stdin repr | ожидаемый stdout repr
+Отрицательный возраст | '-1\n' | 'ошибка\n'
+Нулевая граница | '0\n' | 'бесплатно\n'
+Перед детской границей | '6\n' | 'бесплатно\n'
+Детская граница | '7\n' | 'детский\n'
+Перед взрослой границей | '17\n' | 'детский\n'
+Взрослая граница | '18\n' | 'взрослый\n'
+Перед льготной границей | '64\n' | 'взрослый\n'
+Льготная граница | '65\n' | 'льготный\n'
+После льготной границы | '66\n' | 'льготный\n'
+
+Исходная ошибочная функция из условия
+```python
+def ticket(age):
+    if age < 7:
+        return "бесплатно"
+    elif age <= 18:
+        return "детский"
+    elif age < 65:
+        return "взрослый"
+    return "льготный"
+```
+
+Фактическая проверка чувствительности тестов
+В отдельном временном каталоге функция заменена исходной ошибочной заготовкой, тесты сохранены из итогового решения.
+Ожидается ненулевой код завершения pytest и обнаруженные ошибки заготовки. Эти отказы относятся только к исходной версии.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /tmp/skillup_optional_homework_review/baseline/homework_736_ticket
+Фактический код завершения 1
+Фактический stdout repr
+'F....F...                                                                [100%]\n=================================== FAILURES ===================================\n___________________________ test_ticket_negative_age ___________________________\n\n    def test_ticket_negative_age() -> None:\n>       assert ticket(-1) == "ошибка"\nE       AssertionError: assert \'бесплатно\' == \'ошибка\'\nE         \nE         - ошибка\nE         + бесплатно\n\nsolution.py:12: AssertionError\n__________________________ test_ticket_adult_boundary __________________________\n\n    def test_ticket_adult_boundary() -> None:\n>       assert ticket(18) == "взрослый"\nE       AssertionError: assert \'детский\' == \'взрослый\'\nE         \nE         - взрослый\nE         + детский\n\nsolution.py:32: AssertionError\n=========================== short test summary info ============================\nFAILED solution.py::test_ticket_negative_age - AssertionError: assert \'беспла...\nFAILED solution.py::test_ticket_adult_boundary - AssertionError: assert \'детс...\n2 failed, 7 passed in 0.06s\n'
+Представление repr сохраняет все символы исходного потока, включая конечные пробелы и переводы строк.
+Фактический stderr
+```text
+(пусто)
+```
+
+Итоговый код
+```python
+def ticket(age: int) -> str:
+    if age < 0:
+        return "ошибка"
+    if age < 7:
+        return "бесплатно"
+    elif age < 18:
+        return "детский"
+    elif age < 65:
+        return "взрослый"
+    return "льготный"
+
+
+def test_ticket_negative_age() -> None:
+    assert ticket(-1) == "ошибка"
+
+
+def test_ticket_zero_age() -> None:
+    assert ticket(0) == "бесплатно"
+
+
+def test_ticket_before_child_boundary() -> None:
+    assert ticket(6) == "бесплатно"
+
+
+def test_ticket_child_boundary() -> None:
+    assert ticket(7) == "детский"
+
+
+def test_ticket_before_adult_boundary() -> None:
+    assert ticket(17) == "детский"
+
+
+def test_ticket_adult_boundary() -> None:
+    assert ticket(18) == "взрослый"
+
+
+def test_ticket_before_concession_boundary() -> None:
+    assert ticket(64) == "взрослый"
+
+
+def test_ticket_concession_boundary() -> None:
+    assert ticket(65) == "льготный"
+
+
+def test_ticket_after_concession_boundary() -> None:
+    assert ticket(66) == "льготный"
+
+
+if __name__ == "__main__":
+    print(ticket(int(input())))
+```
+
+Проверка исправленного файла pytest
+Ожидается 9 passed, код0 и пустой stderr. В каждом test_ ровно один assert.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический код завершения 0
+Фактический stdout
+```text
+.........                                                                [100%]
+9 passed in 0.01s
+```
+Фактический stderr
+```text
+(пусто)
+```
+
+Сценарий Отрицательный возраст
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '-1\n'
+Ожидаемый stdout repr 'ошибка\n'
+Фактический stdout repr 'ошибка\n'
+Фактический stdout
+```text
+ошибка
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Нулевая граница
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '0\n'
+Ожидаемый stdout repr 'бесплатно\n'
+Фактический stdout repr 'бесплатно\n'
+Фактический stdout
+```text
+бесплатно
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Перед детской границей
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '6\n'
+Ожидаемый stdout repr 'бесплатно\n'
+Фактический stdout repr 'бесплатно\n'
+Фактический stdout
+```text
+бесплатно
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Детская граница
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '7\n'
+Ожидаемый stdout repr 'детский\n'
+Фактический stdout repr 'детский\n'
+Фактический stdout
+```text
+детский
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Перед взрослой границей
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '17\n'
+Ожидаемый stdout repr 'детский\n'
+Фактический stdout repr 'детский\n'
+Фактический stdout
+```text
+детский
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Взрослая граница
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '18\n'
+Ожидаемый stdout repr 'взрослый\n'
+Фактический stdout repr 'взрослый\n'
+Фактический stdout
+```text
+взрослый
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Перед льготной границей
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '64\n'
+Ожидаемый stdout repr 'взрослый\n'
+Фактический stdout repr 'взрослый\n'
+Фактический stdout
+```text
+взрослый
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий Льготная граница
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '65\n'
+Ожидаемый stdout repr 'льготный\n'
+Фактический stdout repr 'льготный\n'
+Фактический stdout
+```text
+льготный
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Сценарий После льготной границы
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_736_ticket/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_736_ticket
+Фактический stdin repr '66\n'
+Ожидаемый stdout repr 'льготный\n'
+Фактический stdout repr 'льготный\n'
+Фактический stdout
+```text
+льготный
+```
+Фактический stderr repr ''
+Фактический код завершения 0
+Сверка ПРОЙДЕНА
+
+Итог локальной проверки 9 pytest и 9 отдельных процессов stdin пройдены.
+Процессы с исходной ошибочной заготовкой учитываются отдельно, их отказ является ожидаемым доказательством чувствительности тестов.
+Прочтение теории в LMS не означает выполнения этого ДЗ. Отдельного балла и статуса приёмки для функции нет. Готовность здесь только локальная.
+На момент этой подготовки Git, публикация и отправка в LMS не выполнялись. Изменения ранее принятых работ не производились.

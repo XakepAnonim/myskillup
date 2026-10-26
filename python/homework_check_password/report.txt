@@ -1,0 +1,112 @@
+Обязательное домашнее задание check_password
+Урок 645, теоретический шаг 2854
+https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=645&stepId=2854
+Локальная проверка 2026-10-26T21:53:40.936808+00:00
+В отображаемых путях имя пользователя заменено на default; остальной вывод фактический.
+Условие курса
+Длина не менее 8, есть цифра, заглавная и строчная буква. Таблица не менее 8 случаев, каждое нарушенное правило, длины 7/8 и корректный пароль; assert.
+Выбранный контракт в местах, не определённых условием
+Выбранный контракт: функция возвращает bool, CLI печатает True или False. Пароль не обрезается через strip(), пробелы и специальные символы не запрещаются дополнительным правилом. Классы символов определяются стандартными str.isdigit(), str.isupper(), str.islower(), включая Unicode. При EOF проверяется пустая строка.
+Механизм сдачи
+Домашние разделы содержат общую инструкцию загрузить файлы в репозиторий / СДО. Для урока756 также названы myskillup.ru и репозиторий. Отдельная форма, редактор или оценочный шаг именно этой дополнительной функции в сохранённой теории не указаны.
+Статус: локально проверено; LMS не подтверждал; конкретный отдельный путь сдачи этой домашней функции в теории не указан. Git и публикация на этапе подготовки не выполнялись.
+Отдельные принятые Code-решения не изменялись. Этот отчёт не утверждает принятие или зачёт в LMS.
+Файл /home/default/PycharmProjects/skill_up/python/homework_check_password/solution.py
+PYTHONDONTWRITEBYTECODE=1
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python --version
+Фактический STDOUT repr 'Python 3.14.7\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -c 'import sys; print(sys.executable)'
+Фактический STDOUT repr '/home/default/PycharmProjects/skill_up/.venv/bin/python\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Фактический код сохранённого файла
+```python
+def check_password(password: str) -> bool:
+    return (
+        len(password) >= 8
+        and any(character.isdigit() for character in password)
+        and any(character.isupper() for character in password)
+        and any(character.islower() for character in password)
+    )
+
+
+# Проверки по таблице классов и границ.
+def test_length_seven() -> None:
+    assert check_password('Abcde12') is False
+
+
+def test_length_eight() -> None:
+    assert check_password('Abcdef12') is True
+
+
+def test_no_digit() -> None:
+    assert check_password('Abcdefgh') is False
+
+
+def test_no_uppercase() -> None:
+    assert check_password('abcdef12') is False
+
+
+def test_no_lowercase() -> None:
+    assert check_password('ABCDEF12') is False
+
+
+def test_empty() -> None:
+    assert check_password('') is False
+
+
+def test_digits_only() -> None:
+    assert check_password('12345678') is False
+
+
+def test_length_nine() -> None:
+    assert check_password('Abcdef123') is True
+
+
+def test_cyrillic() -> None:
+    assert check_password('Пароль12') is True
+
+
+def test_space_preserved() -> None:
+    assert check_password(' Abcdef1') is True
+
+
+if __name__ == "__main__":
+    try:
+        password = input()
+    except EOFError:
+        password = ""
+    print(check_password(password))
+```
+
+Проверки функции через assert
+Каждая test_функция содержит ровно один assert. Для числовых результатов bmi используется math.isclose; ожидаемый отказ None проверяется отдельно.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_check_password
+Фактический STDOUT repr '..........                                                               [100%]\n10 passed in 0.01s\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Таблица реальных запусков stdin/stdout
+Ожидания записаны до запусков и показаны отдельно от захваченных фактических потоков. repr сохраняет переводы строк, пустые строки и табуляцию.
+№ | Класс или граница | Вход repr | Ожидаемый stdout repr | Фактический stdout repr | Фактический stderr repr | exit code | Статус
+--- | --- | --- | --- | --- | --- | --- | ---
+1 | Длина 7 при остальных выполненных правилах | 'Abcde12\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+2 | Длина 8, все правила | 'Abcdef12\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+3 | Нет цифры | 'Abcdefgh\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+4 | Нет заглавной буквы | 'abcdef12\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+5 | Нет строчной буквы | 'ABCDEF12\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+6 | Пустой пароль | '\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+7 | Только цифры | '12345678\n' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+8 | Длина больше 8 | 'Abcdef123\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+9 | Кириллица по выбранному контракту | 'Пароль12\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+10 | Пробел сохраняется | ' Abcdef1\n' | 'True\n' | 'True\n' | '' | 0 | ПРОЙДЕНА
+11 | EOF | '' | 'False\n' | 'False\n' | '' | 0 | ПРОЙДЕНА
+
+Команда для каждого запуска таблицы /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_check_password/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_check_password
+Результат 10 тестов pytest и 11 реальных процессов stdin/stdout пройдены. Все коды завершения 0, STDERR пуст.
+Git, сеть, установки пакетов, запуск IDE и действия в LMS не выполнялись.

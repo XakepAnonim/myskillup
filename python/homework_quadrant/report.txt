@@ -1,0 +1,134 @@
+Обязательное домашнее задание quadrant
+Урок 736, теоретический шаг 3344
+https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=736&stepId=3344
+Локальная проверка 2026-10-26T21:53:43.381768+00:00
+В отображаемых путях имя пользователя заменено на default; остальной вывод фактический.
+Условие курса
+Вернуть номер координатной четверти 1-4 либо "на оси". Не менее 7 случаев, все четверти, обе оси и начало координат; assert на ветви и границы.
+Выбранный контракт в местах, не определённых условием
+Выбранный контракт для дополнительного ввода: функция принимает конечные числовые координаты, для nan/inf возвращает "ошибка". CLI читает два числа через пробел с точкой либо запятой; неверное количество полей, нечисловой ввод и EOF дают "ошибка". Номера четвертей и "на оси" заданы курсом.
+Механизм сдачи
+Домашние разделы содержат общую инструкцию загрузить файлы в репозиторий / СДО. Для урока756 также названы myskillup.ru и репозиторий. Отдельная форма, редактор или оценочный шаг именно этой дополнительной функции в сохранённой теории не указаны.
+Статус: локально проверено; LMS не подтверждал; конкретный отдельный путь сдачи этой домашней функции в теории не указан. Git и публикация на этапе подготовки не выполнялись.
+Отдельные принятые Code-решения не изменялись. Этот отчёт не утверждает принятие или зачёт в LMS.
+Файл /home/default/PycharmProjects/skill_up/python/homework_quadrant/solution.py
+PYTHONDONTWRITEBYTECODE=1
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python --version
+Фактический STDOUT repr 'Python 3.14.7\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -c 'import sys; print(sys.executable)'
+Фактический STDOUT repr '/home/default/PycharmProjects/skill_up/.venv/bin/python\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Фактический код сохранённого файла
+```python
+from math import isfinite
+from typing import Union
+
+
+def quadrant(x: float, y: float) -> Union[int, str]:
+    if not isfinite(x) or not isfinite(y):
+        return "ошибка"
+    if x == 0 or y == 0:
+        return "на оси"
+    if x > 0 and y > 0:
+        return 1
+    if x < 0 and y > 0:
+        return 2
+    if x < 0 and y < 0:
+        return 3
+    return 4
+
+
+# Проверки по таблице классов и границ.
+def test_first() -> None:
+    assert quadrant(1, 1) == 1
+
+
+def test_second() -> None:
+    assert quadrant(-1, 1) == 2
+
+
+def test_third() -> None:
+    assert quadrant(-1, -1) == 3
+
+
+def test_fourth() -> None:
+    assert quadrant(1, -1) == 4
+
+
+def test_positive_y_axis() -> None:
+    assert quadrant(0, 2) == 'на оси'
+
+
+def test_negative_y_axis() -> None:
+    assert quadrant(0, -2) == 'на оси'
+
+
+def test_positive_x_axis() -> None:
+    assert quadrant(3, 0) == 'на оси'
+
+
+def test_negative_x_axis() -> None:
+    assert quadrant(-3, 0) == 'на оси'
+
+
+def test_origin() -> None:
+    assert quadrant(0, 0) == 'на оси'
+
+
+def test_near_axes() -> None:
+    assert quadrant(0.1, 0.1) == 1
+
+
+def test_nonfinite() -> None:
+    assert quadrant(float("nan"), 1) == 'ошибка'
+
+
+if __name__ == "__main__":
+    try:
+        x_text, y_text = input().split()
+        x = float(x_text.replace(",", "."))
+        y = float(y_text.replace(",", "."))
+    except (ValueError, EOFError):
+        print("ошибка")
+    else:
+        print(quadrant(x, y))
+```
+
+Проверки функции через assert
+Каждая test_функция содержит ровно один assert. Для числовых результатов bmi используется math.isclose; ожидаемый отказ None проверяется отдельно.
+Команда /home/default/PycharmProjects/skill_up/.venv/bin/python -B -m pytest -q -p no:cacheprovider solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_quadrant
+Фактический STDOUT repr '...........                                                              [100%]\n11 passed in 0.03s\n'
+Фактический STDERR repr ''
+Фактический код завершения 0
+
+Таблица реальных запусков stdin/stdout
+Ожидания записаны до запусков и показаны отдельно от захваченных фактических потоков. repr сохраняет переводы строк, пустые строки и табуляцию.
+№ | Класс или граница | Вход repr | Ожидаемый stdout repr | Фактический stdout repr | Фактический stderr repr | exit code | Статус
+--- | --- | --- | --- | --- | --- | --- | ---
+1 | Первая четверть | '1 1\n' | '1\n' | '1\n' | '' | 0 | ПРОЙДЕНА
+2 | Вторая четверть | '-1 1\n' | '2\n' | '2\n' | '' | 0 | ПРОЙДЕНА
+3 | Третья четверть | '-1 -1\n' | '3\n' | '3\n' | '' | 0 | ПРОЙДЕНА
+4 | Четвёртая четверть | '1 -1\n' | '4\n' | '4\n' | '' | 0 | ПРОЙДЕНА
+5 | Положительная полуось Y | '0 2\n' | 'на оси\n' | 'на оси\n' | '' | 0 | ПРОЙДЕНА
+6 | Отрицательная полуось Y | '0 -2\n' | 'на оси\n' | 'на оси\n' | '' | 0 | ПРОЙДЕНА
+7 | Положительная полуось X | '3 0\n' | 'на оси\n' | 'на оси\n' | '' | 0 | ПРОЙДЕНА
+8 | Отрицательная полуось X | '-3 0\n' | 'на оси\n' | 'на оси\n' | '' | 0 | ПРОЙДЕНА
+9 | Начало координат | '0 0\n' | 'на оси\n' | 'на оси\n' | '' | 0 | ПРОЙДЕНА
+10 | Дробные координаты рядом с осями | '0,1 0,1\n' | '1\n' | '1\n' | '' | 0 | ПРОЙДЕНА
+11 | Не число | 'abc 1\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+12 | Не хватает поля | '1\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+13 | Лишнее поле | '1 1 1\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+14 | NaN | 'nan 1\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+15 | Бесконечность | '1 inf\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+16 | Пустая строка | '\n' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+17 | EOF | '' | 'ошибка\n' | 'ошибка\n' | '' | 0 | ПРОЙДЕНА
+
+Команда для каждого запуска таблицы /home/default/PycharmProjects/skill_up/.venv/bin/python -B /home/default/PycharmProjects/skill_up/python/homework_quadrant/solution.py
+Рабочий каталог /home/default/PycharmProjects/skill_up/python/homework_quadrant
+Результат 11 тестов pytest и 17 реальных процессов stdin/stdout пройдены. Все коды завершения 0, STDERR пуст.
+Git, сеть, установки пакетов, запуск IDE и действия в LMS не выполнялись.
