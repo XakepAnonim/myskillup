@@ -41,3 +41,24 @@
 ## Назначение
 
 Практические задания распределяются по отдельным каталогам.
+
+## Документы проекта "Менеджер задач"
+
+- [Требования](docs/requirements.md)
+- [Проектирование](docs/architecture.md)
+
+Документы описывают план первой версии. Реализация приложения и проверки его поведения пока не выполнены.
+
+## Итог Python-спринта
+
+[Комплект с тремя тестами и проверкой восстановления окружения](python/10_reproducible_environment/README.md).
+
+Команды выполняются из корня репозитория.
+
+```bash
+./.venv/bin/python -m pip install -r python/10_reproducible_environment/requirements.txt
+./.venv/bin/python python/10_reproducible_environment/main.py
+./.venv/bin/python -m pytest -q -p no:cacheprovider python/10_reproducible_environment/test_calc.py
+```
+
+Проверка в основном и восстановленном окружениях дала по три успешных теста. Полные фактические результаты и инструкция повторения приведены в README комплекта.
