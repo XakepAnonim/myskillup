@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 866,
+  "step_id": 3796,
+  "source": "lesson_866/step_3796/solution.py",
+  "source_sha256": "cc2542ec95c011e712fcc70073d711fc6fa93a38717292805e60a3c5723e6de9",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_below",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 5,
+  "stdin_scenarios": [
+    {
+      "stdin": "60\n55 70 59 60 30\n",
+      "flags": [],
+      "reference_stdout": "ниже порога: 3\nсписок: 55 59 30\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ниже порога: 3\nсписок: 55 59 30\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "60\n60 61 100\n",
+      "flags": [],
+      "reference_stdout": "ниже порога: 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ниже порога: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "100\n99\n",
+      "flags": [],
+      "reference_stdout": "ниже порога: 1\nсписок: 99\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ниже порога: 1\nсписок: 99\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "60\n\n",
+      "flags": [],
+      "reference_stdout": "ниже порога: 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ниже порога: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n0 0 -1\n",
+      "flags": [],
+      "reference_stdout": "ниже порога: 1\nсписок: -1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ниже порога: 1\nсписок: -1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=866&stepId=3796",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 5,
+    "tests_total": 5,
+    "result_text": "Результат\nУспешно\nПройдено 5 из 5 тестов\n14 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый"
+  }
+}

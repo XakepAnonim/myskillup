@@ -1,0 +1,334 @@
+{
+  "date": "2026-11-07",
+  "destination_inside_existing_project": "python/mdk_2026_11_07",
+  "solutions": 35,
+  "graded_steps": 30,
+  "homeworks": 5,
+  "accepted_steps": 30,
+  "confirmed_points": 3000,
+  "lms_tests_passed": 187,
+  "local_python": "3.14.7",
+  "local_test_functions_passed": 43,
+  "local_stdin_scenarios_passed": 320,
+  "files": [
+    {
+      "source": "lesson_760/step_3592/solution.py",
+      "sha256": "a8c6e4677ea17fd8a47dd914e7c496c52b75ee3b0d9b1943982612346dfc1c0b",
+      "bytes": 1636,
+      "origin": "solutions/step_3592/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_760/step_3592/checks.json",
+      "checks_sha256": "af09805f763dd5df564d62d3f74123023a1c7434a7b67e1a4e819d4cb3f5e229"
+    },
+    {
+      "source": "lesson_760/step_3593/solution.py",
+      "sha256": "e2fd9866a4cc633ee3a35728e704256625823b9187a92927691f023cf55fbdc5",
+      "bytes": 1911,
+      "origin": "solutions/step_3593/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_760/step_3593/checks.json",
+      "checks_sha256": "151840c30485ae865749a184199de0072faa71a9bb85a23e2f24f5c169a6d947"
+    },
+    {
+      "source": "lesson_760/step_3594/solution.py",
+      "sha256": "362835400485a0bc81c2a48e143e11a428a49033bc0a7280340ca84eb8064308",
+      "bytes": 1269,
+      "origin": "solutions/step_3594/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_760/step_3594/checks.json",
+      "checks_sha256": "350ba1271477c30a5f9b485dc60955e1362b47aeed9a4616efcf4e22e339f638"
+    },
+    {
+      "source": "lesson_760/step_3595/solution.py",
+      "sha256": "fcbe532f4470e37950f09376f8f50c17b03b3f7c35d75ccadee36413ffba72a2",
+      "bytes": 2724,
+      "origin": "solutions/step_3595/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_760/step_3595/checks.json",
+      "checks_sha256": "c4f37f782b9d98c5eec73ef3071e4e9aab54a7190245a60b59633b469055207b"
+    },
+    {
+      "source": "lesson_760/step_3596/solution.py",
+      "sha256": "bcba139827cf7c7a3efb2cf3b34cd7d8c835c0fcaea688c87b462e29f0b99110",
+      "bytes": 2640,
+      "origin": "solutions/step_3596/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_760/step_3596/checks.json",
+      "checks_sha256": "d88e64f11ee8e433cece88a1da1fb12092d67e60a9d8d5fcd90ba075bc00408d"
+    },
+    {
+      "source": "lesson_760/step_3597/solution.py",
+      "sha256": "585dd0ebc3b0256fd53f848295e618dcbae2d12bd6ca3bb28ce0a88d11c74b38",
+      "bytes": 2091,
+      "origin": "solutions/step_3597/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_760/step_3597/checks.json",
+      "checks_sha256": "b243bccc5ad62b2751f129905d6239464dd9061249702b39bd83e8c1931b248e"
+    },
+    {
+      "source": "lesson_760/homework/solution.py",
+      "sha256": "8291a815cd8e7f0764913ee735d20f27d5d93477aaaaa1c9b02aa162906e0530",
+      "bytes": 1500,
+      "origin": "solutions/lesson_760_homework/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_760/homework/checks.json",
+      "checks_sha256": "87de28b3c4f5863cbc95516db41e5fc436abdb1c28699d40875be816fc06ce22"
+    },
+    {
+      "source": "lesson_761/step_3600/solution.py",
+      "sha256": "2664f86c6bf2abcc36ebc44068b800aef661803ed93b8dc1214b0e70a3573b46",
+      "bytes": 3181,
+      "origin": "solutions/step_3600/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_761/step_3600/checks.json",
+      "checks_sha256": "153220a25d0c06742e736c6898bb50117fcc1ef654a698eef195ed7ab53fe316"
+    },
+    {
+      "source": "lesson_761/step_3601/solution.py",
+      "sha256": "5705ab40cfb9a77e12ce0e989502616c2a51b5349fab40d2c0833fc40ec56692",
+      "bytes": 2443,
+      "origin": "solutions/step_3601/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_761/step_3601/checks.json",
+      "checks_sha256": "79b8b4f2bee4032b3351fed9406cade2d245b0a4ea24c62f32f3c70183a01ade"
+    },
+    {
+      "source": "lesson_761/step_3602/solution.py",
+      "sha256": "cc2542ec95c011e712fcc70073d711fc6fa93a38717292805e60a3c5723e6de9",
+      "bytes": 2009,
+      "origin": "solutions/step_3602/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_761/step_3602/checks.json",
+      "checks_sha256": "328cef0c6286a0fe8b8c9bfbf7cbe837ddb9e23b171df7a212fc1bed9f41ec1a"
+    },
+    {
+      "source": "lesson_761/step_3603/solution.py",
+      "sha256": "c5c2f2e80e2f367022027d863cf8a7f8335131e6c86e67b55b8c59e5e1bd8d0f",
+      "bytes": 2036,
+      "origin": "solutions/step_3603/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_761/step_3603/checks.json",
+      "checks_sha256": "17604878a0fd5cec625c371dd44afb1a3c9e25c6d89511768749acc33858d73a"
+    },
+    {
+      "source": "lesson_761/step_3604/solution.py",
+      "sha256": "a288ee1e2627cdb4c321450959086ec0799a458e9e68dde7f577e5ebadc1f279",
+      "bytes": 2842,
+      "origin": "solutions/step_3604/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_761/step_3604/checks.json",
+      "checks_sha256": "509377a22db552ba5ec225df26f9446387608e66bcf91f48cc349b0a8f770d0a"
+    },
+    {
+      "source": "lesson_761/step_3605/solution.py",
+      "sha256": "572a32bf71f20a67340619e39b067c1d6806008884163398304bd367f37698e1",
+      "bytes": 4224,
+      "origin": "solutions/step_3605/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_761/step_3605/checks.json",
+      "checks_sha256": "a14c0119b9d8afe5b700763bcfdc1ce618ec295f78a296f966f5c34094144eb7"
+    },
+    {
+      "source": "lesson_761/homework/solution.py",
+      "sha256": "dcd28393298f14b93fbdd83619f3828ce130ee602a986d3ef541956f6eaad09b",
+      "bytes": 3000,
+      "origin": "solutions/lesson_761_homework/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_761/homework/checks.json",
+      "checks_sha256": "e914c993d603820ed7a91f2e549b05597b4a8cf0fd83dc712f15857054c8c67b"
+    },
+    {
+      "source": "lesson_865/step_3786/solution.py",
+      "sha256": "a1a7c737767e6cf81472f72a552df590ff043a372261dcda579be8afb0ebcb0a",
+      "bytes": 2023,
+      "origin": "solutions/step_3786/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_865/step_3786/checks.json",
+      "checks_sha256": "a50fba6593e3b17d1330853568195639f8dbb08feea11053f3e0f8b189740361"
+    },
+    {
+      "source": "lesson_865/step_3787/solution.py",
+      "sha256": "91a4fb1842b8c7bfc4da9689324263df7607727572de54cfe6b4adede51665c1",
+      "bytes": 1967,
+      "origin": "solutions/step_3787/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_865/step_3787/checks.json",
+      "checks_sha256": "3aec48ee9b01074afc8e8adcab9af45f257fd1ff1ad58ba5aea3eade4efbb5c3"
+    },
+    {
+      "source": "lesson_865/step_3788/solution.py",
+      "sha256": "7fa44c46184c0e159127e5be5378871686688a89b696d5819eaac772a725ed4d",
+      "bytes": 2213,
+      "origin": "solutions/step_3788/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_865/step_3788/checks.json",
+      "checks_sha256": "85cd44f05bcc461d2696e4450642d6d33baa103327c73026abe89b58ab0a4117"
+    },
+    {
+      "source": "lesson_865/step_3789/solution.py",
+      "sha256": "99f284090c516c8431fe952d38999939a7716cea7b8b3ec1b6fa3675ccb403c7",
+      "bytes": 1703,
+      "origin": "solutions/step_3789/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_865/step_3789/checks.json",
+      "checks_sha256": "b479c1462b4b12b19e2f52fbe759b00fa8c6bb9c5e6482a3b6e08cf88e2d7104"
+    },
+    {
+      "source": "lesson_865/step_3790/solution.py",
+      "sha256": "3d6bea63711d698390790d0bdd1845dbf2c7e4f83dd2cca7e61c04f0e386266b",
+      "bytes": 2110,
+      "origin": "solutions/step_3790/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_865/step_3790/checks.json",
+      "checks_sha256": "8ef45b5dc9761df1f3d80d43f1fe7c1912c1785d680e28a981960704903d5620"
+    },
+    {
+      "source": "lesson_865/step_3791/solution.py",
+      "sha256": "80ad14873abd3e55de8b3eba8d6f475536221907e7b0513a21d2b845f35b8463",
+      "bytes": 2421,
+      "origin": "solutions/step_3791/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_865/step_3791/checks.json",
+      "checks_sha256": "10b476bcc51b95c91366e94acaeb38272b577dcf5055708500f79e9831dc0512"
+    },
+    {
+      "source": "lesson_865/homework/solution.py",
+      "sha256": "5b26525c7131aca0abb1309a5197477c862746a4007da0bd89b1963312169803",
+      "bytes": 2862,
+      "origin": "solutions/lesson_865_homework/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_865/homework/checks.json",
+      "checks_sha256": "d372ab7c4fb04b7fc99adcdd837d8d12dc0ffbdfcda71d931e56cd182ea66571"
+    },
+    {
+      "source": "lesson_866/step_3794/solution.py",
+      "sha256": "2664f86c6bf2abcc36ebc44068b800aef661803ed93b8dc1214b0e70a3573b46",
+      "bytes": 3181,
+      "origin": "solutions/step_3794/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_866/step_3794/checks.json",
+      "checks_sha256": "399748d4a3d47f7e60c87ccce81e29a77244f60f88285bff39eef17984eee086"
+    },
+    {
+      "source": "lesson_866/step_3795/solution.py",
+      "sha256": "5705ab40cfb9a77e12ce0e989502616c2a51b5349fab40d2c0833fc40ec56692",
+      "bytes": 2443,
+      "origin": "solutions/step_3795/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_866/step_3795/checks.json",
+      "checks_sha256": "dcc5ccb0e548e57ff3a9923dd22ede7e32dd1f9dac755cb16ee2e5a50edbba02"
+    },
+    {
+      "source": "lesson_866/step_3796/solution.py",
+      "sha256": "cc2542ec95c011e712fcc70073d711fc6fa93a38717292805e60a3c5723e6de9",
+      "bytes": 2009,
+      "origin": "solutions/step_3796/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_866/step_3796/checks.json",
+      "checks_sha256": "829311af7318ed72bbf54d7226953f22ed4204c012e80a8086500ce7dc61c600"
+    },
+    {
+      "source": "lesson_866/step_3797/solution.py",
+      "sha256": "c5c2f2e80e2f367022027d863cf8a7f8335131e6c86e67b55b8c59e5e1bd8d0f",
+      "bytes": 2036,
+      "origin": "solutions/step_3797/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_866/step_3797/checks.json",
+      "checks_sha256": "a91f1396a64231b2c780a71045ad4307656253195745467a21a523d197e3389f"
+    },
+    {
+      "source": "lesson_866/step_3798/solution.py",
+      "sha256": "a288ee1e2627cdb4c321450959086ec0799a458e9e68dde7f577e5ebadc1f279",
+      "bytes": 2842,
+      "origin": "solutions/step_3798/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_866/step_3798/checks.json",
+      "checks_sha256": "e21731c9ece2aa3b97077d03fca507532c070a7f1bbc8a765a8d59f5e75a0d6a"
+    },
+    {
+      "source": "lesson_866/step_3799/solution.py",
+      "sha256": "572a32bf71f20a67340619e39b067c1d6806008884163398304bd367f37698e1",
+      "bytes": 4224,
+      "origin": "solutions/step_3799/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_866/step_3799/checks.json",
+      "checks_sha256": "58b884a47d05e518d715ea3f2a30cb8745e871640363ef0e3b952ed4d0d3cfbd"
+    },
+    {
+      "source": "lesson_866/homework/solution.py",
+      "sha256": "dcd28393298f14b93fbdd83619f3828ce130ee602a986d3ef541956f6eaad09b",
+      "bytes": 3000,
+      "origin": "solutions/lesson_866_homework/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_866/homework/checks.json",
+      "checks_sha256": "378d1c8e128dce34e08d339cc71a7b06856b2ab379fd9d249a79f461d5ca13c9"
+    },
+    {
+      "source": "lesson_873/step_3832/solution.py",
+      "sha256": "d4d8fc7c2d9a8f16decfa2f39aa91de7ba3a1578cc6b277da7b0d283114692c3",
+      "bytes": 2508,
+      "origin": "solutions/step_3832/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_873/step_3832/checks.json",
+      "checks_sha256": "30d293a2aeb38e968579b73b67fbbc0d6fb5977b9c735bb1754585f0efbe52ee"
+    },
+    {
+      "source": "lesson_873/step_3833/solution.py",
+      "sha256": "88a4645d7b1fe12587db0628142136b2722e38786ce20dd64d752a99fafe97e3",
+      "bytes": 2654,
+      "origin": "solutions/step_3833/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_873/step_3833/checks.json",
+      "checks_sha256": "809cddc1a5f4766526bfecc9cf4fc7abe7c98d8552d95a1e1c71d5f0902d822a"
+    },
+    {
+      "source": "lesson_873/step_3834/solution.py",
+      "sha256": "4c72b1c704583b0b15280f8ca81da5fb49199fda70b3dc421866b8e8854ac957",
+      "bytes": 3244,
+      "origin": "solutions/step_3834/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_873/step_3834/checks.json",
+      "checks_sha256": "8981a652bcb0ae8e182eb42b188378550fabb6b3c47a7758866c131b5a3ca7e2"
+    },
+    {
+      "source": "lesson_873/step_3835/solution.py",
+      "sha256": "4fd5068d328858a718680078c68d9de90eb17f6c2be717d9b0a1d40e9a7c6baa",
+      "bytes": 4159,
+      "origin": "solutions/step_3835/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_873/step_3835/checks.json",
+      "checks_sha256": "cfe3f44175fa6fa659c39a390515e241a64f3e7efd5167d9ef5cf811b3f43540"
+    },
+    {
+      "source": "lesson_873/step_3836/solution.py",
+      "sha256": "706852f894392a9f2e486f15d07c71db7c097f78ff6c5b60a8d9429c497231d5",
+      "bytes": 3938,
+      "origin": "solutions/step_3836/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_873/step_3836/checks.json",
+      "checks_sha256": "8902d56250a493101d9218f8ebc3958944f386dcfb4c9409b174261551515af2"
+    },
+    {
+      "source": "lesson_873/step_3837/solution.py",
+      "sha256": "ed467651bec7bd9da29427ab639a18d3854a73dd852259e21bc07f68e91fa369",
+      "bytes": 4752,
+      "origin": "solutions/step_3837/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_873/step_3837/checks.json",
+      "checks_sha256": "b09c1c0f8d4336cc6759773c9c89cfbdd1031934a7a5f92b677b7091e7529e23"
+    },
+    {
+      "source": "lesson_873/homework/solution.py",
+      "sha256": "79f84dd341083971ac9e312870ec1be3ce6c5ad86840694d3e1c446555e78925",
+      "bytes": 4909,
+      "origin": "solutions/lesson_873_homework/solution.py",
+      "origin_and_copy_byte_identical": true,
+      "checks": "lesson_873/homework/checks.json",
+      "checks_sha256": "168730a3a55962b41357d8760d8eb747d76927014bb64fc8fc7554e2a4ffc930"
+    }
+  ],
+  "assembly_used_git_operations": false,
+  "assembly_wrote_main_project": false,
+  "repository": "https://github.com/XakepAnonim/myskillup",
+  "branch": "feature/mdk-2026-11-07"
+}

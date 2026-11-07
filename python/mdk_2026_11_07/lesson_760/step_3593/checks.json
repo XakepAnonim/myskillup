@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 760,
+  "step_id": 3593,
+  "source": "lesson_760/step_3593/solution.py",
+  "source_sha256": "e2fd9866a4cc633ee3a35728e704256625823b9187a92927691f023cf55fbdc5",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_format",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    },
+    {
+      "name": "test_out_of_range",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    },
+    {
+      "name": "test_valid_and_boundaries",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 15,
+  "stdin_scenarios": [
+    {
+      "stdin": "09:05\n",
+      "flags": [],
+      "reference_stdout": "545\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "545\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "00:00\n",
+      "flags": [],
+      "reference_stdout": "0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "23:59\n",
+      "flags": [],
+      "reference_stdout": "1439\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "1439\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "24:00\n",
+      "flags": [],
+      "reference_stdout": "ошибка: часы\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: часы\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "12:60\n",
+      "flags": [],
+      "reference_stdout": "ошибка: минуты\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: минуты\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "7:30\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "ab:cd\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": " 09:05 \n",
+      "flags": [],
+      "reference_stdout": "545\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "545\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "99:99\n",
+      "flags": [],
+      "reference_stdout": "ошибка: часы\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: часы\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "²3:00\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "１２:３０\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "09.05\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "09:0 \n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=760&stepId=3593",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 7,
+    "tests_total": 7,
+    "result_text": "Результат\nУспешно\nПройдено 7 из 7 тестов\n31 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый"
+  }
+}

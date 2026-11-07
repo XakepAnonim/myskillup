@@ -1,0 +1,153 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 873,
+  "step_id": 3836,
+  "source": "lesson_873/step_3836/solution.py",
+  "source_sha256": "706852f894392a9f2e486f15d07c71db7c097f78ff6c5b60a8d9429c497231d5",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_final_price",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 12,
+  "stdin_scenarios": [
+    {
+      "stdin": "1000 15\n",
+      "flags": [],
+      "reference_stdout": "К оплате: 850 коп.\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "К оплате: 850 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "999 10\n",
+      "flags": [],
+      "reference_stdout": "К оплате: 900 коп.\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "К оплате: 900 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "500 0\n",
+      "flags": [],
+      "reference_stdout": "К оплате: 500 коп.\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "К оплате: 500 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "500 100\n",
+      "flags": [],
+      "reference_stdout": "К оплате: 0 коп.\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "К оплате: 0 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0 50\n",
+      "flags": [],
+      "reference_stdout": "К оплате: 0 коп.\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "К оплате: 0 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1000 101\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1000 -5\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 10\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 101\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 99\n",
+      "flags": [],
+      "reference_stdout": "К оплате: 1 коп.\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "К оплате: 1 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "100000000000000000009 10\n",
+      "flags": [],
+      "reference_stdout": "К оплате: 90000000000000000009 коп.\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "К оплате: 90000000000000000009 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1000 101\n",
+      "flags": [
+        "-O"
+      ],
+      "reference_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=873&stepId=3836",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 8,
+    "tests_total": 8,
+    "result_text": "Результат\nУспешно\nПройдено 8 из 8 тестов\n26 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый\nТест 8\nскрытый"
+  }
+}

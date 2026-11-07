@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 760,
+  "step_id": 3594,
+  "source": "lesson_760/step_3594/solution.py",
+  "source_sha256": "362835400485a0bc81c2a48e143e11a428a49033bc0a7280340ca84eb8064308",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_parse_age",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 13,
+  "stdin_scenarios": [
+    {
+      "stdin": "25\n",
+      "flags": [],
+      "reference_stdout": "возраст: 25, попыток: 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 25, попыток: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "abc\n-3\n40\n",
+      "flags": [],
+      "reference_stdout": "возраст: 40, попыток: 3\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 40, попыток: 3\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "121\n120\n",
+      "flags": [],
+      "reference_stdout": "возраст: 120, попыток: 2\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 120, попыток: 2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "flags": [],
+      "reference_stdout": "возраст: 0, попыток: 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 0, попыток: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "x\ny\nz\n30\n",
+      "flags": [],
+      "reference_stdout": "попытки исчерпаны\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "попытки исчерпаны\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4.5\n",
+      "flags": [],
+      "reference_stdout": "ввод прерван\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ввод прерван\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "",
+      "flags": [],
+      "reference_stdout": "ввод прерван\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ввод прерван\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1\n0\n",
+      "flags": [],
+      "reference_stdout": "возраст: 0, попыток: 2\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 0, попыток: 2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n\n120\n",
+      "flags": [],
+      "reference_stdout": "возраст: 120, попыток: 3\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 120, попыток: 3\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "x\ny\n",
+      "flags": [],
+      "reference_stdout": "ввод прерван\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ввод прерван\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "x\ny\nz\n",
+      "flags": [],
+      "reference_stdout": "попытки исчерпаны\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "попытки исчерпаны\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": " 40 \n",
+      "flags": [],
+      "reference_stdout": "возраст: 40, попыток: 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 40, попыток: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "²\n+5\n",
+      "flags": [],
+      "reference_stdout": "возраст: 5, попыток: 2\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "возраст: 5, попыток: 2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=760&stepId=3594",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 6,
+    "tests_total": 6,
+    "result_text": "Результат\nУспешно\nПройдено 6 из 6 тестов\n23 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый"
+  }
+}

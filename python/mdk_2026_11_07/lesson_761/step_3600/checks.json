@@ -1,0 +1,131 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 761,
+  "step_id": 3600,
+  "source": "lesson_761/step_3600/solution.py",
+  "source_sha256": "2664f86c6bf2abcc36ebc44068b800aef661803ed93b8dc1214b0e70a3573b46",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_grade_stats",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 10,
+  "stdin_scenarios": [
+    {
+      "stdin": "5 4 4 3\n",
+      "flags": [],
+      "reference_stdout": "оценок: 4, сумма: 16, среднее: 4.00\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "оценок: 4, сумма: 16, среднее: 4.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4 4 5\n",
+      "flags": [],
+      "reference_stdout": "оценок: 3, сумма: 13, среднее: 4.33\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "оценок: 3, сумма: 13, среднее: 4.33\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5\n",
+      "flags": [],
+      "reference_stdout": "оценок: 1, сумма: 5, среднее: 5.00\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "оценок: 1, сумма: 5, среднее: 5.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 3\n",
+      "flags": [],
+      "reference_stdout": "оценок: 2, сумма: 5, среднее: 2.50\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "оценок: 2, сумма: 5, среднее: 2.50\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "нет оценок\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет оценок\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 6 4\n",
+      "flags": [],
+      "reference_stdout": "ошибка ввода\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка ввода\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 пять\n",
+      "flags": [],
+      "reference_stdout": "ошибка ввода\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка ввода\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 2\n",
+      "flags": [],
+      "reference_stdout": "ошибка ввода\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка ввода\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "   \t\n",
+      "flags": [],
+      "reference_stdout": "нет оценок\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет оценок\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4.0\n",
+      "flags": [],
+      "reference_stdout": "ошибка ввода\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка ввода\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=761&stepId=3600",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 7,
+    "tests_total": 7,
+    "result_text": "Результат\nУспешно\nПройдено 7 из 7 тестов\n14 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый"
+  }
+}

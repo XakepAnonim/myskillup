@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 873,
+  "step_id": null,
+  "source": "lesson_873/homework/solution.py",
+  "source_sha256": "79f84dd341083971ac9e312870ec1be3ce6c5ad86840694d3e1c446555e78925",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_grade_stats",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 4,
+  "stdin_scenarios": [
+    {
+      "stdin": "5 4 4 3\n",
+      "flags": [],
+      "reference_stdout": "оценок: 4, сумма: 16, среднее: 4.00\n",
+      "reference_origin": "prior_actual_stdout",
+      "actual_stdout": "оценок: 4, сумма: 16, среднее: 4.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4 4 5\n",
+      "flags": [],
+      "reference_stdout": "оценок: 3, сумма: 13, среднее: 4.33\n",
+      "reference_origin": "prior_actual_stdout",
+      "actual_stdout": "оценок: 3, сумма: 13, среднее: 4.33\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "нет оценок\n",
+      "reference_origin": "prior_actual_stdout",
+      "actual_stdout": "нет оценок\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\n",
+      "flags": [],
+      "reference_stdout": "оценок: 1, сумма: 2, среднее: 2.00\n",
+      "reference_origin": "prior_actual_stdout",
+      "actual_stdout": "оценок: 1, сумма: 2, среднее: 2.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "status": "no_separate_graded_step",
+    "points_claimed": false
+  },
+  "homework_status": "Локально проверено. Отдельного оцениваемого шага SkillUp нет; зачёт преподавателем не заявлен.",
+  "doctest": {
+    "examples_passed": 7,
+    "actual_exit_code": 0,
+    "actual_stdout": "Trying:\n    grade_stats(\"5 4 4 3\")\nExpecting:\n    'оценок: 4, сумма: 16, среднее: 4.00'\nok\nTrying:\n    grade_stats(\"4 4 5\")\nExpecting:\n    'оценок: 3, сумма: 13, среднее: 4.33'\nok\nTrying:\n    grade_stats(\"\")\nExpecting:\n    'нет оценок'\nok\nTrying:\n    grade_stats(\"2\")\nExpecting:\n    'оценок: 1, сумма: 2, среднее: 2.00'\nok\nTrying:\n    grade_stats(None)\nExpecting:\n    Traceback (most recent call last):\n        ...\n    TypeError: ожидается строка оценок\nok\nTrying:\n    grade_stats(5)\nExpecting:\n    Traceback (most recent call last):\n        ...\n    TypeError: ожидается строка оценок\nok\nTrying:\n    grade_stats(\"5 6 4\")\nExpecting:\n    'ошибка ввода'\nok\n2 items had no tests:\n    solution\n    solution.test_grade_stats\n1 item passed all tests:\n   7 tests in solution.grade_stats\n7 tests in 3 items.\n7 passed.\nTest passed.\n"
+  }
+}

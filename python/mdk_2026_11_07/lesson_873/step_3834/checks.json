@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 873,
+  "step_id": 3834,
+  "source": "lesson_873/step_3834/solution.py",
+  "source_sha256": "4c72b1c704583b0b15280f8ca81da5fb49199fda70b3dc421866b8e8854ac957",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_split_bill",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 11,
+  "stdin_scenarios": [
+    {
+      "stdin": "1000 3\n",
+      "flags": [],
+      "reference_stdout": "Доли: 334 333 333\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доли: 334 333 333\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "900 3\n",
+      "flags": [],
+      "reference_stdout": "Доли: 300 300 300\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доли: 300 300 300\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 1\n",
+      "flags": [],
+      "reference_stdout": "Доли: 5\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доли: 5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 5\n",
+      "flags": [],
+      "reference_stdout": "Доли: 1 1 0 0 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доли: 1 1 0 0 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0 2\n",
+      "flags": [],
+      "reference_stdout": "Доли: 0 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доли: 0 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "100 0\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: число участников должно быть не меньше 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: число участников должно быть не меньше 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-5 2\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: сумма не может быть отрицательной\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: сумма не может быть отрицательной\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 0\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: сумма не может быть отрицательной\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: сумма не может быть отрицательной\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 -1\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: число участников должно быть не меньше 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: число участников должно быть не меньше 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0 1\n",
+      "flags": [],
+      "reference_stdout": "Доли: 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доли: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "100 0\n",
+      "flags": [
+        "-O"
+      ],
+      "reference_stdout": "Ошибка: число участников должно быть не меньше 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: число участников должно быть не меньше 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=873&stepId=3834",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 7,
+    "tests_total": 7,
+    "result_text": "Результат\nУспешно\nПройдено 7 из 7 тестов\n23 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый"
+  }
+}

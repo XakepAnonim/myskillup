@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 760,
+  "step_id": 3596,
+  "source": "lesson_760/step_3596/solution.py",
+  "source_sha256": "bcba139827cf7c7a3efb2cf3b34cd7d8c835c0fcaea688c87b462e29f0b99110",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_errors",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    },
+    {
+      "name": "test_valid",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 20,
+  "stdin_scenarios": [
+    {
+      "stdin": "29.02.2024\n",
+      "flags": [],
+      "reference_stdout": "ok\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ok\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "29.02.2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: день\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: день\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "31.04.2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: день\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: день\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "00.01.2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: день\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: день\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "15.13.2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: месяц\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: месяц\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1.1.2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "01.01.1899\n",
+      "flags": [],
+      "reference_stdout": "ошибка: год\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: год\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "31.12.2100\n",
+      "flags": [],
+      "reference_stdout": "ok\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ok\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "01.01.1900\n",
+      "flags": [],
+      "reference_stdout": "ok\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ok\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "01.01.2101\n",
+      "flags": [],
+      "reference_stdout": "ошибка: год\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: год\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "29.02.1900\n",
+      "flags": [],
+      "reference_stdout": "ошибка: день\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: день\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "29.02.2000\n",
+      "flags": [],
+      "reference_stdout": "ok\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ok\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "29.02.2100\n",
+      "flags": [],
+      "reference_stdout": "ошибка: день\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: день\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "00.00.1899\n",
+      "flags": [],
+      "reference_stdout": "ошибка: год\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: год\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "00.00.2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: месяц\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: месяц\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0².01.2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "01/01/2026\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "01.01.2026 \n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "",
+      "flags": [],
+      "reference_stdout": "ошибка: формат\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "ошибка: формат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=760&stepId=3596",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 8,
+    "tests_total": 8,
+    "result_text": "Результат\nУспешно\nПройдено 8 из 8 тестов\n24 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый\nТест 8\nскрытый"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 873,
+  "step_id": 3833,
+  "source": "lesson_873/step_3833/solution.py",
+  "source_sha256": "88a4645d7b1fe12587db0628142136b2722e38786ce20dd64d752a99fafe97e3",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_average_grade",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 11,
+  "stdin_scenarios": [
+    {
+      "stdin": "5 4 4 4\n",
+      "flags": [],
+      "reference_stdout": "Средний балл: 4.25\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Средний балл: 4.25\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5\n",
+      "flags": [],
+      "reference_stdout": "Средний балл: 5.0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Средний балл: 5.0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 3\n",
+      "flags": [],
+      "reference_stdout": "Средний балл: 2.5\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Средний балл: 2.5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 4 5\n",
+      "flags": [],
+      "reference_stdout": "Средний балл: 4.0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Средний балл: 4.0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: список оценок пуст\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: список оценок пуст\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 6 4\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4 1\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: недопустимая оценка: 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: недопустимая оценка: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "6 1\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\n",
+      "flags": [],
+      "reference_stdout": "Средний балл: 2.0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Средний балл: 2.0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 2 3\n",
+      "flags": [],
+      "reference_stdout": "Средний балл: 2.33\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Средний балл: 2.33\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [
+        "-O"
+      ],
+      "reference_stdout": "Ошибка: список оценок пуст\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: список оценок пуст\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=873&stepId=3833",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 7,
+    "tests_total": 7,
+    "result_text": "Результат\nУспешно\nПройдено 7 из 7 тестов\n23 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 865,
+  "step_id": 3787,
+  "source": "lesson_865/step_3787/solution.py",
+  "source_sha256": "91a4fb1842b8c7bfc4da9689324263df7607727572de54cfe6b4adede51665c1",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_ranking",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 5,
+  "stdin_scenarios": [
+    {
+      "stdin": "3\nИванов 78\nПетрова 92\nСидоров 64\n",
+      "flags": [],
+      "reference_stdout": "1. Петрова 92\n2. Иванов 78\n3. Сидоров 64\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "1. Петрова 92\n2. Иванов 78\n3. Сидоров 64\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3\nОрлов 80\nАбрамов 80\nЯковлев 95\n",
+      "flags": [],
+      "reference_stdout": "1. Яковлев 95\n2. Абрамов 80\n3. Орлов 80\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "1. Яковлев 95\n2. Абрамов 80\n3. Орлов 80\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1\nКим 50\n",
+      "flags": [],
+      "reference_stdout": "1. Ким 50\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "1. Ким 50\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\nБелов 0\nАвдеев 100\n",
+      "flags": [],
+      "reference_stdout": "1. Авдеев 100\n2. Белов 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "1. Авдеев 100\n2. Белов 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "flags": [],
+      "reference_stdout": "нет данных\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет данных\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=865&stepId=3787",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 5,
+    "tests_total": 5,
+    "result_text": "Результат\nУспешно\nПройдено 5 из 5 тестов\n13 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый"
+  }
+}

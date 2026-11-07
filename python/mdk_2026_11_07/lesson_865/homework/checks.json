@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 865,
+  "step_id": null,
+  "source": "lesson_865/homework/solution.py",
+  "source_sha256": "5b26525c7131aca0abb1309a5197477c862746a4007da0bd89b1963312169803",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_transpose",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": 6
+    }
+  ],
+  "stdin_scenarios_passed": 0,
+  "stdin_scenarios": [],
+  "lms": {
+    "status": "no_separate_graded_step",
+    "points_claimed": false
+  },
+  "homework_status": "Локально проверено. Отдельного оцениваемого шага SkillUp нет; зачёт преподавателем не заявлен.",
+  "homework_main_actual_stdout": "transpose: 6 сценариев пройдено\n",
+  "homework_main_actual_exit_code": 0
+}

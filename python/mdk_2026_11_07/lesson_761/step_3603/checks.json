@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 761,
+  "step_id": 3603,
+  "source": "lesson_761/step_3603/solution.py",
+  "source_sha256": "c5c2f2e80e2f367022027d863cf8a7f8335131e6c86e67b55b8c59e5e1bd8d0f",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_word_freq",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 6,
+  "stdin_scenarios": [
+    {
+      "stdin": "тест код тест\n",
+      "flags": [],
+      "reference_stdout": "тест: 2\nкод: 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "тест: 2\nкод: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "Код код КОД\n",
+      "flags": [],
+      "reference_stdout": "код: 3\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "код: 3\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "б а б а в\n",
+      "flags": [],
+      "reference_stdout": "а: 2\nб: 2\nв: 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "а: 2\nб: 2\nв: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "один\n",
+      "flags": [],
+      "reference_stdout": "один: 1\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "один: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "нет слов\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет слов\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "  \t  \n",
+      "flags": [],
+      "reference_stdout": "нет слов\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет слов\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=761&stepId=3603",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 5,
+    "tests_total": 5,
+    "result_text": "Результат\nУспешно\nПройдено 5 из 5 тестов\n13 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый"
+  }
+}
