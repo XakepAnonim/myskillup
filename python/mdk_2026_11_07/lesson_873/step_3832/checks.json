@@ -1,0 +1,143 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 873,
+  "step_id": 3832,
+  "source": "lesson_873/step_3832/solution.py",
+  "source_sha256": "d4d8fc7c2d9a8f16decfa2f39aa91de7ba3a1578cc6b277da7b0d283114692c3",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_percent",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 11,
+  "stdin_scenarios": [
+    {
+      "stdin": "1 4\n",
+      "flags": [],
+      "reference_stdout": "Доля: 25.0%\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доля: 25.0%\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 3\n",
+      "flags": [],
+      "reference_stdout": "Доля: 33.3%\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доля: 33.3%\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 3\n",
+      "flags": [],
+      "reference_stdout": "Доля: 100.0%\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доля: 100.0%\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0 7\n",
+      "flags": [],
+      "reference_stdout": "Доля: 0.0%\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доля: 0.0%\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 0\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: total должен быть больше 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: total должен быть больше 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 4\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: part должен быть от 0 до total\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: part должен быть от 0 до total\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 4\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: part должен быть от 0 до total\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: part должен быть от 0 до total\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 0\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: total должен быть больше 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: total должен быть больше 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 -1\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: total должен быть больше 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: total должен быть больше 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 6\n",
+      "flags": [],
+      "reference_stdout": "Доля: 16.7%\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Доля: 16.7%\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 0\n",
+      "flags": [
+        "-O"
+      ],
+      "reference_stdout": "Ошибка: total должен быть больше 0\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: total должен быть больше 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=873&stepId=3832",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 7,
+    "tests_total": 7,
+    "result_text": "Результат\nУспешно\nПройдено 7 из 7 тестов\n15 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый"
+  }
+}

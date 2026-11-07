@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 760,
+  "step_id": null,
+  "source": "lesson_760/homework/solution.py",
+  "source_sha256": "8291a815cd8e7f0764913ee735d20f27d5d93477aaaaa1c9b02aa162906e0530",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_domestic_phone",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    },
+    {
+      "name": "test_incorrect_prefix",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    },
+    {
+      "name": "test_international_phone",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    },
+    {
+      "name": "test_invalid_digits",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 15,
+  "stdin_scenarios": [
+    {
+      "stdin": "+79001234567\n",
+      "flags": [],
+      "reference_stdout": "True\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "True\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "89001234567\n",
+      "flags": [],
+      "reference_stdout": "True\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "True\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7 900-123-45-67\n",
+      "flags": [],
+      "reference_stdout": "True\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "True\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "8 900 123-45-67\n",
+      "flags": [],
+      "reference_stdout": "True\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "True\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7900123456\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+790012345678\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "8900123456\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "890012345678\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "79001234567\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+89001234567\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7900123456a\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7900123456²\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7(900)1234567\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "",
+      "flags": [],
+      "reference_stdout": "False\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "False\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "status": "no_separate_graded_step",
+    "points_claimed": false
+  },
+  "homework_status": "Локально проверено. Отдельного оцениваемого шага SkillUp нет; зачёт преподавателем не заявлен."
+}

@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 866,
+  "step_id": null,
+  "source": "lesson_866/homework/solution.py",
+  "source_sha256": "dcd28393298f14b93fbdd83619f3828ce130ee602a986d3ef541956f6eaad09b",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_min_max_avg",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 9,
+  "stdin_scenarios": [
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "нет чисел\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет чисел\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "7\n",
+      "flags": [],
+      "reference_stdout": "минимум: 7, максимум: 7, среднее: 7.00\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: 7, максимум: 7, среднее: 7.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 9 2\n",
+      "flags": [],
+      "reference_stdout": "минимум: 2, максимум: 9, среднее: 4.67\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: 2, максимум: 9, среднее: 4.67\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-5 -2 -7\n",
+      "flags": [],
+      "reference_stdout": "минимум: -7, максимум: -2, среднее: -4.67\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: -7, максимум: -2, среднее: -4.67\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4 4 4\n",
+      "flags": [],
+      "reference_stdout": "минимум: 4, максимум: 4, среднее: 4.00\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: 4, максимум: 4, среднее: 4.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-2 2\n",
+      "flags": [],
+      "reference_stdout": "минимум: -2, максимум: 2, среднее: 0.00\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: -2, максимум: 2, среднее: 0.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "9 2 3\n",
+      "flags": [],
+      "reference_stdout": "минимум: 2, максимум: 9, среднее: 4.67\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: 2, максимум: 9, среднее: 4.67\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 2 9\n",
+      "flags": [],
+      "reference_stdout": "минимум: 1, максимум: 9, среднее: 4.00\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: 1, максимум: 9, среднее: 4.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0 0\n",
+      "flags": [],
+      "reference_stdout": "минимум: 0, максимум: 0, среднее: 0.00\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "минимум: 0, максимум: 0, среднее: 0.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "status": "no_separate_graded_step",
+    "points_claimed": false
+  },
+  "homework_status": "Локально проверено. Отдельного оцениваемого шага SkillUp нет; зачёт преподавателем не заявлен."
+}

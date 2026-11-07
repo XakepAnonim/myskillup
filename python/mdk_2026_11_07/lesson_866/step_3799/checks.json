@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 866,
+  "step_id": 3799,
+  "source": "lesson_866/step_3799/solution.py",
+  "source_sha256": "572a32bf71f20a67340619e39b067c1d6806008884163398304bd367f37698e1",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_second_max",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 9,
+  "stdin_scenarios": [
+    {
+      "stdin": "3 9 5\n",
+      "flags": [],
+      "reference_stdout": "5\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "9 9 5\n",
+      "flags": [],
+      "reference_stdout": "5\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 -3 -2\n",
+      "flags": [],
+      "reference_stdout": "-2\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "-2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 2 2 3 3\n",
+      "flags": [],
+      "reference_stdout": "2\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 5\n",
+      "flags": [],
+      "reference_stdout": "нет\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "7\n",
+      "flags": [],
+      "reference_stdout": "нет\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "нет\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "нет\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 1 3 2 2\n",
+      "flags": [],
+      "reference_stdout": "2\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 -1 -2 -3\n",
+      "flags": [],
+      "reference_stdout": "-2\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "-2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=866&stepId=3799",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 7,
+    "tests_total": 7,
+    "result_text": "Результат\nУспешно\nПройдено 7 из 7 тестов\n15 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый"
+  }
+}

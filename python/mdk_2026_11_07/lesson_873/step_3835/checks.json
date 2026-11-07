@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-07",
+  "lesson_id": 873,
+  "step_id": 3835,
+  "source": "lesson_873/step_3835/solution.py",
+  "source_sha256": "4fd5068d328858a718680078c68d9de90eb17f6c2be717d9b0a1d40e9a7c6baa",
+  "local_python": "3.14.7",
+  "local_command": "python -B solution.py",
+  "python38_syntax_parse_passed": true,
+  "actual_local_python38_execution": false,
+  "test_functions_actually_called": [
+    {
+      "name": "test_time",
+      "passed": true,
+      "actual_stdout": "",
+      "return_value": null
+    }
+  ],
+  "stdin_scenarios_passed": 16,
+  "stdin_scenarios": [
+    {
+      "stdin": "19:20 20:05\n",
+      "flags": [],
+      "reference_stdout": "Длительность: 45 мин\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Длительность: 45 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "00:00 23:59\n",
+      "flags": [],
+      "reference_stdout": "Длительность: 1439 мин\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Длительность: 1439 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "12:00 12:00\n",
+      "flags": [],
+      "reference_stdout": "Длительность: 0 мин\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Длительность: 0 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "24:00 01:00\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:60 11:00\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "9:30 10:00\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "20:15 19:20\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: конец раньше начала\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: конец раньше начала\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00 11:00 12:00\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10-00 11:00\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "aa:bb 11:00\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00 24:60\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00 11:60\n",
+      "flags": [],
+      "reference_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "23:58 23:59\n",
+      "flags": [],
+      "reference_stdout": "Длительность: 1 мин\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Длительность: 1 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "24:00 01:00\n",
+      "flags": [
+        "-O"
+      ],
+      "reference_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "reference_origin": "expected_stdout",
+      "actual_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms": {
+    "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=873&stepId=3835",
+    "accepted": true,
+    "points": 100,
+    "maximum_points": 100,
+    "tests_passed": 7,
+    "tests_total": 7,
+    "result_text": "Результат\nУспешно\nПройдено 7 из 7 тестов\n16 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый"
+  }
+}
