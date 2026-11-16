@@ -1,0 +1,428 @@
+{
+  "compiler": "Official Kotlin Playground JVM 2.4.21",
+  "sourceSha256": "99a9227a1a96bf64320b664b99713d07ab913c10befb62ea3cf088dd15bea94f",
+  "sourceEmbeddedVerbatim": true,
+  "functionChecksPassed": true,
+  "ioScenariosPassed": 42,
+  "ioMethod": "Compiled Kotlin with deterministic readlnOrNull/println adapters; not an OS stdin launch",
+  "cases": [
+    {
+      "task": "1",
+      "inputs": [
+        "Anna_K"
+      ],
+      "expected": "Логин: anna_k\n",
+      "id": "1027-001",
+      "actual": "Логин: anna_k\n",
+      "passed": true
+    },
+    {
+      "task": "1",
+      "inputs": [
+        "  IVAN  "
+      ],
+      "expected": "Логин: ivan\n",
+      "id": "1027-002",
+      "actual": "Логин: ivan\n",
+      "passed": true
+    },
+    {
+      "task": "1",
+      "inputs": [
+        "petr"
+      ],
+      "expected": "Логин: petr\n",
+      "id": "1027-003",
+      "actual": "Логин: petr\n",
+      "passed": true
+    },
+    {
+      "task": "1",
+      "inputs": [
+        "anna k"
+      ],
+      "expected": "Пробел в логине\n",
+      "id": "1027-004",
+      "actual": "Пробел в логине\n",
+      "passed": true
+    },
+    {
+      "task": "1",
+      "inputs": [
+        "   "
+      ],
+      "expected": "Пустой логин\n",
+      "id": "1027-005",
+      "actual": "Пустой логин\n",
+      "passed": true
+    },
+    {
+      "task": "1",
+      "inputs": [
+        ""
+      ],
+      "expected": "Пустой логин\n",
+      "id": "1027-006",
+      "actual": "Пустой логин\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        "5"
+      ],
+      "expected": "Квадрат: 25\n",
+      "id": "1027-007",
+      "actual": "Квадрат: 25\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        "-3"
+      ],
+      "expected": "Квадрат: 9\n",
+      "id": "1027-008",
+      "actual": "Квадрат: 9\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        " 12 "
+      ],
+      "expected": "Квадрат: 144\n",
+      "id": "1027-009",
+      "actual": "Квадрат: 144\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        "0"
+      ],
+      "expected": "Квадрат: 0\n",
+      "id": "1027-010",
+      "actual": "Квадрат: 0\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        "2.5"
+      ],
+      "expected": "Не число: '2.5'\n",
+      "id": "1027-011",
+      "actual": "Не число: '2.5'\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        "abc"
+      ],
+      "expected": "Не число: 'abc'\n",
+      "id": "1027-012",
+      "actual": "Не число: 'abc'\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        ""
+      ],
+      "expected": "Не число: ''\n",
+      "id": "1027-013",
+      "actual": "Не число: ''\n",
+      "passed": true
+    },
+    {
+      "task": "2",
+      "inputs": [
+        "2147483647"
+      ],
+      "expected": "Квадрат: 4611686014132420609\n",
+      "id": "1027-014",
+      "actual": "Квадрат: 4611686014132420609\n",
+      "passed": true
+    },
+    {
+      "task": "3",
+      "inputs": [
+        "Kotlin любит kotlin|kotlin"
+      ],
+      "expected": "Найдено: 2\n",
+      "id": "1027-015",
+      "actual": "Найдено: 2\n",
+      "passed": true
+    },
+    {
+      "task": "3",
+      "inputs": [
+        "ааа|аа"
+      ],
+      "expected": "Найдено: 1\n",
+      "id": "1027-016",
+      "actual": "Найдено: 1\n",
+      "passed": true
+    },
+    {
+      "task": "3",
+      "inputs": [
+        "Android Studio|java"
+      ],
+      "expected": "Найдено: 0\n",
+      "id": "1027-017",
+      "actual": "Найдено: 0\n",
+      "passed": true
+    },
+    {
+      "task": "3",
+      "inputs": [
+        "мама мыла раму|ма"
+      ],
+      "expected": "Найдено: 2\n",
+      "id": "1027-018",
+      "actual": "Найдено: 2\n",
+      "passed": true
+    },
+    {
+      "task": "3",
+      "inputs": [
+        "текст|"
+      ],
+      "expected": "Пустой запрос\n",
+      "id": "1027-019",
+      "actual": "Пустой запрос\n",
+      "passed": true
+    },
+    {
+      "task": "3",
+      "inputs": [
+        "текст|   "
+      ],
+      "expected": "Пустой запрос\n",
+      "id": "1027-020",
+      "actual": "Пустой запрос\n",
+      "passed": true
+    },
+    {
+      "task": "3",
+      "inputs": [
+        "просто текст"
+      ],
+      "expected": "Неверный формат\n",
+      "id": "1027-021",
+      "actual": "Неверный формат\n",
+      "passed": true
+    },
+    {
+      "task": "4",
+      "inputs": [
+        "Анна"
+      ],
+      "expected": "Привет, Анна!\nСимволов в имени: 4\n",
+      "id": "1027-022",
+      "actual": "Привет, Анна!\nСимволов в имени: 4\n",
+      "passed": true
+    },
+    {
+      "task": "4",
+      "inputs": [
+        "  Олег  "
+      ],
+      "expected": "Привет, Олег!\nСимволов в имени: 4\n",
+      "id": "1027-023",
+      "actual": "Привет, Олег!\nСимволов в имени: 4\n",
+      "passed": true
+    },
+    {
+      "task": "4",
+      "inputs": [
+        ""
+      ],
+      "expected": "Привет, гость!\nСимволов в имени: 0\n",
+      "id": "1027-024",
+      "actual": "Привет, гость!\nСимволов в имени: 0\n",
+      "passed": true
+    },
+    {
+      "task": "4",
+      "inputs": [
+        "  "
+      ],
+      "expected": "Привет, гость!\nСимволов в имени: 0\n",
+      "id": "1027-025",
+      "actual": "Привет, гость!\nСимволов в имени: 0\n",
+      "passed": true
+    },
+    {
+      "task": "4",
+      "inputs": [
+        "Мария Ивановна"
+      ],
+      "expected": "Привет, Мария Ивановна!\nСимволов в имени: 14\n",
+      "id": "1027-026",
+      "actual": "Привет, Мария Ивановна!\nСимволов в имени: 14\n",
+      "passed": true
+    },
+    {
+      "task": "5",
+      "inputs": [
+        "5 x 7 -2 3.5"
+      ],
+      "expected": "Чисел: 3, сумма: 10, пропущено: 2\n",
+      "id": "1027-027",
+      "actual": "Чисел: 3, сумма: 10, пропущено: 2\n",
+      "passed": true
+    },
+    {
+      "task": "5",
+      "inputs": [
+        "  1  2 3  "
+      ],
+      "expected": "Чисел: 3, сумма: 6, пропущено: 0\n",
+      "id": "1027-028",
+      "actual": "Чисел: 3, сумма: 6, пропущено: 0\n",
+      "passed": true
+    },
+    {
+      "task": "5",
+      "inputs": [
+        "abc def"
+      ],
+      "expected": "Чисел: 0, сумма: 0, пропущено: 2\n",
+      "id": "1027-029",
+      "actual": "Чисел: 0, сумма: 0, пропущено: 2\n",
+      "passed": true
+    },
+    {
+      "task": "5",
+      "inputs": [
+        "-10 +5"
+      ],
+      "expected": "Чисел: 2, сумма: -5, пропущено: 0\n",
+      "id": "1027-030",
+      "actual": "Чисел: 2, сумма: -5, пропущено: 0\n",
+      "passed": true
+    },
+    {
+      "task": "5",
+      "inputs": [
+        ""
+      ],
+      "expected": "Чисел: 0, сумма: 0, пропущено: 0\n",
+      "id": "1027-031",
+      "actual": "Чисел: 0, сумма: 0, пропущено: 0\n",
+      "passed": true
+    },
+    {
+      "task": "6",
+      "inputs": [
+        "+7 (912) 345-67-89"
+      ],
+      "expected": "+7 (***) ***-67-89\n",
+      "id": "1027-032",
+      "actual": "+7 (***) ***-67-89\n",
+      "passed": true
+    },
+    {
+      "task": "6",
+      "inputs": [
+        "89123456789"
+      ],
+      "expected": "+7 (***) ***-67-89\n",
+      "id": "1027-033",
+      "actual": "+7 (***) ***-67-89\n",
+      "passed": true
+    },
+    {
+      "task": "6",
+      "inputs": [
+        "7 912 000 11 22"
+      ],
+      "expected": "+7 (***) ***-11-22\n",
+      "id": "1027-034",
+      "actual": "+7 (***) ***-11-22\n",
+      "passed": true
+    },
+    {
+      "task": "6",
+      "inputs": [
+        "+7 912 345 67"
+      ],
+      "expected": "Неверный номер\n",
+      "id": "1027-035",
+      "actual": "Неверный номер\n",
+      "passed": true
+    },
+    {
+      "task": "6",
+      "inputs": [
+        "5 (912) 345-67-89"
+      ],
+      "expected": "Неверный номер\n",
+      "id": "1027-036",
+      "actual": "Неверный номер\n",
+      "passed": true
+    },
+    {
+      "task": "6",
+      "inputs": [
+        "телефон"
+      ],
+      "expected": "Неверный номер\n",
+      "id": "1027-037",
+      "actual": "Неверный номер\n",
+      "passed": true
+    },
+    {
+      "task": "7",
+      "inputs": [
+        ""
+      ],
+      "expected": "Нужно целое число\n",
+      "id": "1027-038",
+      "actual": "Нужно целое число\n",
+      "passed": true
+    },
+    {
+      "task": "7",
+      "inputs": [
+        "   "
+      ],
+      "expected": "Нужно целое число\n",
+      "id": "1027-039",
+      "actual": "Нужно целое число\n",
+      "passed": true
+    },
+    {
+      "task": "7",
+      "inputs": [
+        "abc"
+      ],
+      "expected": "Нужно целое число\n",
+      "id": "1027-040",
+      "actual": "Нужно целое число\n",
+      "passed": true
+    },
+    {
+      "task": "7",
+      "inputs": [
+        "10"
+      ],
+      "expected": "2 3 5 7\n",
+      "id": "1027-041",
+      "actual": "2 3 5 7\n",
+      "passed": true
+    },
+    {
+      "task": "7",
+      "inputs": [],
+      "expected": "Нужно целое число\n",
+      "id": "1027-042",
+      "actual": "Нужно целое число\n",
+      "passed": true
+    }
+  ]
+}
