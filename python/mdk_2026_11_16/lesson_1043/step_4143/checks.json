@@ -1,0 +1,77 @@
+{
+  "stepId": 4143,
+  "source_sha256": "ff9f1ff9ef5132b1da71ce8344ea6cec75bdd93280c51d80a39a191def3e4306",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_history"
+  ],
+  "doctest_attempted": 2,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "5\nnew\nassigned\nfixed\nverified\nclosed\n",
+      "expected_stdout": "История корректна: Закрыт, переоткрытий: 0\n",
+      "actual_stdout": "История корректна: Закрыт, переоткрытий: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "8\nnew\nassigned\nfixed\nreopened\nassigned\nfixed\nverified\nclosed\n",
+      "expected_stdout": "История корректна: Закрыт, переоткрытий: 1\n",
+      "actual_stdout": "История корректна: Закрыт, переоткрытий: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1\nnew\n",
+      "expected_stdout": "История корректна: Новый, переоткрытий: 0\n",
+      "actual_stdout": "История корректна: Новый, переоткрытий: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3\nnew\nduplicate\nclosed\n",
+      "expected_stdout": "История корректна: Закрыт, переоткрытий: 0\n",
+      "actual_stdout": "История корректна: Закрыт, переоткрытий: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4\nnew\nassigned\nfixed\nclosed\n",
+      "expected_stdout": "Ошибка: в шаге 4 переход fixed -> closed запрещён\n",
+      "actual_stdout": "Ошибка: в шаге 4 переход fixed -> closed запрещён\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\nassigned\nfixed\n",
+      "expected_stdout": "Ошибка: история должна начинаться со статуса new\n",
+      "actual_stdout": "Ошибка: история должна начинаться со статуса new\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3\nnew\nassigned\ndone\n",
+      "expected_stdout": "Ошибка: в шаге 3 неизвестный статус done\n",
+      "actual_stdout": "Ошибка: в шаге 3 неизвестный статус done\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "expected_stdout": "Ошибка: история пуста\n",
+      "actual_stdout": "Ошибка: история пуста\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

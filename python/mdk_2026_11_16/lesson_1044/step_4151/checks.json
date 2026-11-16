@@ -1,0 +1,77 @@
+{
+  "stepId": 4151,
+  "source_sha256": "9a19ce94af1c1e9e139fcd7eea2134aad23f1b225ff4580cfe3b8f4277edbab9",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_dates"
+  ],
+  "doctest_attempted": 8,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "09.11.2026\n",
+      "expected_stdout": "День в году: 313\n",
+      "actual_stdout": "День в году: 313\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "01.01.2026\n",
+      "expected_stdout": "День в году: 1\n",
+      "actual_stdout": "День в году: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "31.12.2024\n",
+      "expected_stdout": "День в году: 366\n",
+      "actual_stdout": "День в году: 366\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "29.02.2024\n",
+      "expected_stdout": "День в году: 60\n",
+      "actual_stdout": "День в году: 60\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "29.02.2026\n",
+      "expected_stdout": "Ошибка: в этом месяце нет такого дня\n",
+      "actual_stdout": "Ошибка: в этом месяце нет такого дня\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "00.05.2026\n",
+      "expected_stdout": "Ошибка: в этом месяце нет такого дня\n",
+      "actual_stdout": "Ошибка: в этом месяце нет такого дня\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "15.13.2026\n",
+      "expected_stdout": "Ошибка: месяц должен быть от 01 до 12\n",
+      "actual_stdout": "Ошибка: месяц должен быть от 01 до 12\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "9.11.2026\n",
+      "expected_stdout": "Ошибка: ожидается формат ДД.ММ.ГГГГ\n",
+      "actual_stdout": "Ошибка: ожидается формат ДД.ММ.ГГГГ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

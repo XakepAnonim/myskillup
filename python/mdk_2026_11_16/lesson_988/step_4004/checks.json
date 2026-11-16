@@ -1,0 +1,53 @@
+{
+  "stepId": 4004,
+  "source_sha256": "91a4fb1842b8c7bfc4da9689324263df7607727572de54cfe6b4adede51665c1",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_ranking"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "3\nИванов 78\nПетрова 92\nСидоров 64\n",
+      "expected_stdout": "1. Петрова 92\n2. Иванов 78\n3. Сидоров 64\n",
+      "actual_stdout": "1. Петрова 92\n2. Иванов 78\n3. Сидоров 64\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3\nОрлов 80\nАбрамов 80\nЯковлев 95\n",
+      "expected_stdout": "1. Яковлев 95\n2. Абрамов 80\n3. Орлов 80\n",
+      "actual_stdout": "1. Яковлев 95\n2. Абрамов 80\n3. Орлов 80\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1\nКим 50\n",
+      "expected_stdout": "1. Ким 50\n",
+      "actual_stdout": "1. Ким 50\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\nБелов 0\nАвдеев 100\n",
+      "expected_stdout": "1. Авдеев 100\n2. Белов 0\n",
+      "actual_stdout": "1. Авдеев 100\n2. Белов 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "expected_stdout": "нет данных\n",
+      "actual_stdout": "нет данных\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

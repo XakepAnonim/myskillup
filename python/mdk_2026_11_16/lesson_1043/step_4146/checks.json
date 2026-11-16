@@ -1,0 +1,53 @@
+{
+  "stepId": 4146,
+  "source_sha256": "16695114bbc4b8c259e059f8b95bd9119f4a31a8764a4a0487444d5e97182ef2",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_compare"
+  ],
+  "doctest_attempted": 2,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "PPFP\nPFPP\n",
+      "expected_stdout": "Регрессии: 2\nИсправлены: 3\nПадают по-прежнему: нет\nИтог: прогон не пройден\n",
+      "actual_stdout": "Регрессии: 2\nИсправлены: 3\nПадают по-прежнему: нет\nИтог: прогон не пройден\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "FFP\nPPP\n",
+      "expected_stdout": "Регрессии: нет\nИсправлены: 1, 2\nПадают по-прежнему: нет\nИтог: прогон пройден\n",
+      "actual_stdout": "Регрессии: нет\nИсправлены: 1, 2\nПадают по-прежнему: нет\nИтог: прогон пройден\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "PFFP\nFFPF\n",
+      "expected_stdout": "Регрессии: 1, 4\nИсправлены: 3\nПадают по-прежнему: 2\nИтог: прогон не пройден\n",
+      "actual_stdout": "Регрессии: 1, 4\nИсправлены: 3\nПадают по-прежнему: 2\nИтог: прогон не пройден\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "PP\nPPP\n",
+      "expected_stdout": "Ошибка: разная длина прогонов\n",
+      "actual_stdout": "Ошибка: разная длина прогонов\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "PX\nPP\n",
+      "expected_stdout": "Ошибка: допустимы только символы P и F\n",
+      "actual_stdout": "Ошибка: допустимы только символы P и F\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

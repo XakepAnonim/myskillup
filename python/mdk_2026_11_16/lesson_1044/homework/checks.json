@@ -1,0 +1,46 @@
+{
+  "lessonId": 1044,
+  "source_sha256": "79f84dd341083971ac9e312870ec1be3ce6c5ad86840694d3e1c446555e78925",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_grade_stats"
+  ],
+  "doctest_attempted": 7,
+  "doctest_failed": 0,
+  "cli": [
+    {
+      "stdin": "5 4 4 3\n",
+      "expected_stdout": "оценок: 4, сумма: 16, среднее: 4.00\n",
+      "actual_stdout": "оценок: 4, сумма: 16, среднее: 4.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "нет оценок\n",
+      "actual_stdout": "нет оценок\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\n",
+      "expected_stdout": "оценок: 1, сумма: 2, среднее: 2.00\n",
+      "actual_stdout": "оценок: 1, сумма: 2, среднее: 2.00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 6\n",
+      "expected_stdout": "ошибка ввода\n",
+      "actual_stdout": "ошибка ввода\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms_submission": false,
+  "verbose_doctest_exit_code": 0
+}

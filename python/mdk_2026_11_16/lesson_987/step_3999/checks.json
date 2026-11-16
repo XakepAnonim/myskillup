@@ -1,0 +1,75 @@
+{
+  "stepId": 3999,
+  "source_sha256": "121d48bb6595d2053ef45f92717ad25f53d3359f1597abe560fc7c83330e5172",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_normalize_phone"
+  ],
+  "doctest_attempted": 4,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "8 (912) 345-67-89\n",
+      "expected_stdout": "Номер: +79123456789\n",
+      "actual_stdout": "Номер: +79123456789\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7 912 345 67 89\n",
+      "expected_stdout": "Номер: +79123456789\n",
+      "actual_stdout": "Номер: +79123456789\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "9123456789\n",
+      "expected_stdout": "Номер: +79123456789\n",
+      "actual_stdout": "Номер: +79123456789\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "8-800-555-35-35\n",
+      "expected_stdout": "Номер: +78005553535\n",
+      "actual_stdout": "Номер: +78005553535\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7 912 345 67\n",
+      "expected_stdout": "Ошибка: некорректный номер\n",
+      "actual_stdout": "Ошибка: некорректный номер\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "+7 912 ABC 67 89\n",
+      "expected_stdout": "Ошибка: некорректный номер\n",
+      "actual_stdout": "Ошибка: некорректный номер\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "Ошибка: некорректный номер\n",
+      "actual_stdout": "Ошибка: некорректный номер\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "old_doc_actual_failure": {
+    "attempted": 1,
+    "failed": 1,
+    "expected_failure_confirmed": true,
+    "output": "**********************************************************************\nFile \"solution.py\", line 3, in normalize_phone_old\nFailed example:\n    normalize_phone_old(\"8 (912) 345-67-89\")\nExpected:\n    '+79123456789'\nGot:\n    '+7(912)3456789'\n"
+  }
+}

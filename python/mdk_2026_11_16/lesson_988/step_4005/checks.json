@@ -1,0 +1,53 @@
+{
+  "stepId": 4005,
+  "source_sha256": "7fa44c46184c0e159127e5be5378871686688a89b696d5819eaac772a725ed4d",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_sums"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "2 3\n1 2 3\n4 5 6\n",
+      "expected_stdout": "строки: 6 15\nстолбцы: 5 7 9\nитого: 21\n",
+      "actual_stdout": "строки: 6 15\nстолбцы: 5 7 9\nитого: 21\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 1\n7\n",
+      "expected_stdout": "строки: 7\nстолбцы: 7\nитого: 7\n",
+      "actual_stdout": "строки: 7\nстолбцы: 7\nитого: 7\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 1\n1\n-2\n3\n",
+      "expected_stdout": "строки: 1 -2 3\nстолбцы: 2\nитого: 2\n",
+      "actual_stdout": "строки: 1 -2 3\nстолбцы: 2\nитого: 2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 2\n0 0\n0 0\n",
+      "expected_stdout": "строки: 0 0\nстолбцы: 0 0\nитого: 0\n",
+      "actual_stdout": "строки: 0 0\nстолбцы: 0 0\nитого: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 4\n-1 -2 -3 -4\n",
+      "expected_stdout": "строки: -10\nстолбцы: -1 -2 -3 -4\nитого: -10\n",
+      "actual_stdout": "строки: -10\nстолбцы: -1 -2 -3 -4\nитого: -10\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

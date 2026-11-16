@@ -1,0 +1,11 @@
+{
+  "lessonId": 1043,
+  "stepId": 4146,
+  "title": "Задание 6. Сравнение двух прогонов",
+  "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=1043&stepId=4146",
+  "accepted": true,
+  "result": "Результат\nУспешно\nПройдено 5 из 5 тестов\n75 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый",
+  "serverTestsPassed": 5,
+  "points": 100,
+  "scoreVerifiedAfterReopeningLesson": true
+}

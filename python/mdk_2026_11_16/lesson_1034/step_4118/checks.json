@@ -1,0 +1,93 @@
+{
+  "stepId": 4118,
+  "source_sha256": "88a4645d7b1fe12587db0628142136b2722e38786ce20dd64d752a99fafe97e3",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_average_grade"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "5 4 4 4\n",
+      "expected_stdout": "Средний балл: 4.25\n",
+      "actual_stdout": "Средний балл: 4.25\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5\n",
+      "expected_stdout": "Средний балл: 5.0\n",
+      "actual_stdout": "Средний балл: 5.0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 3\n",
+      "expected_stdout": "Средний балл: 2.5\n",
+      "actual_stdout": "Средний балл: 2.5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 4 5\n",
+      "expected_stdout": "Средний балл: 4.0\n",
+      "actual_stdout": "Средний балл: 4.0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "Ошибка: список оценок пуст\n",
+      "actual_stdout": "Ошибка: список оценок пуст\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 6 4\n",
+      "expected_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "actual_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4 1\n",
+      "expected_stdout": "Ошибка: недопустимая оценка: 1\n",
+      "actual_stdout": "Ошибка: недопустимая оценка: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "6 1\n",
+      "expected_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "actual_stdout": "Ошибка: недопустимая оценка: 6\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\n",
+      "expected_stdout": "Средний балл: 2.0\n",
+      "actual_stdout": "Средний балл: 2.0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 2 3\n",
+      "expected_stdout": "Средний балл: 2.33\n",
+      "actual_stdout": "Средний балл: 2.33\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "lessonId": 988,
+  "source_sha256": "5b26525c7131aca0abb1309a5197477c862746a4007da0bd89b1963312169803",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_transpose"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "cli": [
+    {
+      "stdin": "",
+      "expected_stdout": "transpose: 6 сценариев пройдено\n",
+      "actual_stdout": "transpose: 6 сценариев пройдено\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms_submission": false
+}

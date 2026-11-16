@@ -1,0 +1,53 @@
+{
+  "stepId": 4006,
+  "source_sha256": "99f284090c516c8431fe952d38999939a7716cea7b8b3ec1b6fa3675ccb403c7",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_clamp_scores"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "50 -5 120 100\n",
+      "expected_stdout": "исправлено: 2\nрезультат: 50 0 100 100\n",
+      "actual_stdout": "исправлено: 2\nрезультат: 50 0 100 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0 100\n",
+      "expected_stdout": "исправлено: 0\nрезультат: 0 100\n",
+      "actual_stdout": "исправлено: 0\nрезультат: 0 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1\n",
+      "expected_stdout": "исправлено: 1\nрезультат: 0\n",
+      "actual_stdout": "исправлено: 1\nрезультат: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "101 -100 55\n",
+      "expected_stdout": "исправлено: 2\nрезультат: 100 0 55\n",
+      "actual_stdout": "исправлено: 2\nрезультат: 100 0 55\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "пустой список\n",
+      "actual_stdout": "пустой список\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

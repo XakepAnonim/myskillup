@@ -1,0 +1,77 @@
+{
+  "stepId": 4142,
+  "source_sha256": "6362167ae6927cb74b27bd34edb418bd4997ef377bdbdc75583bf5f37e30a312",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_can_move"
+  ],
+  "doctest_attempted": 4,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "new assigned\n",
+      "expected_stdout": "Переход разрешён: Новый -> Назначен\n",
+      "actual_stdout": "Переход разрешён: Новый -> Назначен\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "fixed verified\n",
+      "expected_stdout": "Переход разрешён: Исправлен -> Проверен\n",
+      "actual_stdout": "Переход разрешён: Исправлен -> Проверен\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "closed reopened\n",
+      "expected_stdout": "Переход разрешён: Закрыт -> Переоткрыт\n",
+      "actual_stdout": "Переход разрешён: Закрыт -> Переоткрыт\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "fixed closed\n",
+      "expected_stdout": "Переход запрещён: Исправлен -> Закрыт\n",
+      "actual_stdout": "Переход запрещён: Исправлен -> Закрыт\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "new closed\n",
+      "expected_stdout": "Переход запрещён: Новый -> Закрыт\n",
+      "actual_stdout": "Переход запрещён: Новый -> Закрыт\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "new new\n",
+      "expected_stdout": "Переход запрещён: Новый -> Новый\n",
+      "actual_stdout": "Переход запрещён: Новый -> Новый\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "new done\n",
+      "expected_stdout": "Ошибка: неизвестный статус done\n",
+      "actual_stdout": "Ошибка: неизвестный статус done\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "fixed\n",
+      "expected_stdout": "Ошибка: ожидается два статуса через пробел\n",
+      "actual_stdout": "Ошибка: ожидается два статуса через пробел\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

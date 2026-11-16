@@ -1,0 +1,77 @@
+{
+  "lessonId": 1035,
+  "source_sha256": "06cd9e9ee01335cdc1fa47fbb8e55e7c34ecdde998387a94b5054bdb66e38ffa",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_to_rub"
+  ],
+  "doctest_attempted": 3,
+  "doctest_failed": 0,
+  "cli": [
+    {
+      "stdin": "12345\n",
+      "expected_stdout": "123 руб. 45 коп.\n",
+      "actual_stdout": "123 руб. 45 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "expected_stdout": "0 руб. 00 коп.\n",
+      "actual_stdout": "0 руб. 00 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5\n",
+      "expected_stdout": "0 руб. 05 коп.\n",
+      "actual_stdout": "0 руб. 05 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "100\n",
+      "expected_stdout": "1 руб. 00 коп.\n",
+      "actual_stdout": "1 руб. 00 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1000000000\n",
+      "expected_stdout": "10000000 руб. 00 коп.\n",
+      "actual_stdout": "10000000 руб. 00 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1000000001\n",
+      "expected_stdout": "Ошибка: сумма от 0 до 1000000000\n",
+      "actual_stdout": "Ошибка: сумма от 0 до 1000000000\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1\n",
+      "expected_stdout": "Ошибка: сумма от 0 до 1000000000\n",
+      "actual_stdout": "Ошибка: сумма от 0 до 1000000000\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "12.5\n",
+      "expected_stdout": "Ошибка: нужно целое число\n",
+      "actual_stdout": "Ошибка: нужно целое число\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "lms_submission": false
+}

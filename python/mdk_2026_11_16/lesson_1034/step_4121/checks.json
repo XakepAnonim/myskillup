@@ -1,0 +1,133 @@
+{
+  "stepId": 4121,
+  "source_sha256": "4fd5068d328858a718680078c68d9de90eb17f6c2be717d9b0a1d40e9a7c6baa",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_time"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "19:20 20:05\n",
+      "expected_stdout": "Длительность: 45 мин\n",
+      "actual_stdout": "Длительность: 45 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "00:00 23:59\n",
+      "expected_stdout": "Длительность: 1439 мин\n",
+      "actual_stdout": "Длительность: 1439 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "12:00 12:00\n",
+      "expected_stdout": "Длительность: 0 мин\n",
+      "actual_stdout": "Длительность: 0 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "24:00 01:00\n",
+      "expected_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "actual_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:60 11:00\n",
+      "expected_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "actual_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "9:30 10:00\n",
+      "expected_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "20:15 19:20\n",
+      "expected_stdout": "Ошибка: конец раньше начала\n",
+      "actual_stdout": "Ошибка: конец раньше начала\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00\n",
+      "expected_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00 11:00 12:00\n",
+      "expected_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10-00 11:00\n",
+      "expected_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "aa:bb 11:00\n",
+      "expected_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stdout": "Ошибка: ожидается формат ЧЧ:ММ\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00 24:60\n",
+      "expected_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "actual_stdout": "Ошибка: часы должны быть от 00 до 23\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "10:00 11:60\n",
+      "expected_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "actual_stdout": "Ошибка: минуты должны быть от 00 до 59\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "23:58 23:59\n",
+      "expected_stdout": "Длительность: 1 мин\n",
+      "actual_stdout": "Длительность: 1 мин\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

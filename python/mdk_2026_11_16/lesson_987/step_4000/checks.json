@@ -1,0 +1,69 @@
+{
+  "stepId": 4000,
+  "source_sha256": "a6239b9c5e3628551415282d581eedcf483441bafaee70bc50ab14ed2c1a040a",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_rle"
+  ],
+  "doctest_attempted": 4,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "aaabcc\n",
+      "expected_stdout": "Код: a3b1c2\n",
+      "actual_stdout": "Код: a3b1c2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "abc\n",
+      "expected_stdout": "Код: a1b1c1\n",
+      "actual_stdout": "Код: a1b1c1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "zzzzzzzzzzzz\n",
+      "expected_stdout": "Код: z12\n",
+      "actual_stdout": "Код: z12\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "Код: пусто\n",
+      "actual_stdout": "Код: пусто\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "aaAA\n",
+      "expected_stdout": "Код: a2A2\n",
+      "actual_stdout": "Код: a2A2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "ab1\n",
+      "expected_stdout": "Ошибка: строка должна состоять только из букв\n",
+      "actual_stdout": "Ошибка: строка должна состоять только из букв\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "a b\n",
+      "expected_stdout": "Ошибка: строка должна состоять только из букв\n",
+      "actual_stdout": "Ошибка: строка должна состоять только из букв\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

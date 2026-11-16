@@ -1,0 +1,101 @@
+{
+  "stepId": 4125,
+  "source_sha256": "6d5642cfea7fd323d412bd42c1dd3b9487fd7d5c046a4583eee8c7f737caef18",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_marks_stats"
+  ],
+  "doctest_attempted": 4,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "5 4 3\n",
+      "expected_stdout": "Средний балл: 4.00, пятёрок: 1\n",
+      "actual_stdout": "Средний балл: 4.00, пятёрок: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5\n",
+      "expected_stdout": "Средний балл: 5.00, пятёрок: 1\n",
+      "actual_stdout": "Средний балл: 5.00, пятёрок: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 2 3\n",
+      "expected_stdout": "Средний балл: 2.33, пятёрок: 0\n",
+      "actual_stdout": "Средний балл: 2.33, пятёрок: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "Ошибка: нет оценок\n",
+      "actual_stdout": "Ошибка: нет оценок\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 6\n",
+      "expected_stdout": "Ошибка: оценка должна быть от 2 до 5\n",
+      "actual_stdout": "Ошибка: оценка должна быть от 2 до 5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 1\n",
+      "expected_stdout": "Ошибка: оценка должна быть от 2 до 5\n",
+      "actual_stdout": "Ошибка: оценка должна быть от 2 до 5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 x\n",
+      "expected_stdout": "Ошибка: оценка должна быть целым числом\n",
+      "actual_stdout": "Ошибка: оценка должна быть целым числом\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\n",
+      "expected_stdout": "Средний балл: 2.00, пятёрок: 0\n",
+      "actual_stdout": "Средний балл: 2.00, пятёрок: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2 5\n",
+      "expected_stdout": "Средний балл: 3.50, пятёрок: 1\n",
+      "actual_stdout": "Средний балл: 3.50, пятёрок: 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "5 4.5\n",
+      "expected_stdout": "Ошибка: оценка должна быть целым числом\n",
+      "actual_stdout": "Ошибка: оценка должна быть целым числом\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": " \t \n",
+      "expected_stdout": "Ошибка: нет оценок\n",
+      "actual_stdout": "Ошибка: нет оценок\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}
