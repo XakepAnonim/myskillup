@@ -1,0 +1,41 @@
+{
+  "program": "check_history",
+  "cli": [
+    {
+      "stdin": "5\nnew\nassigned\nfixed\nverified\nclosed\n",
+      "expected_stdout": "История корректна: Закрыт, переоткрытий: 0\n",
+      "actual_stdout": "История корректна: Закрыт, переоткрытий: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true,
+      "kind": "позитивная"
+    },
+    {
+      "stdin": "4\nnew\nassigned\nfixed\nclosed\n",
+      "expected_stdout": "Ошибка: в шаге 4 переход fixed -> closed запрещён\n",
+      "actual_stdout": "Ошибка: в шаге 4 переход fixed -> closed запрещён\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true,
+      "kind": "негативная"
+    },
+    {
+      "stdin": "1\nnew\n",
+      "expected_stdout": "История корректна: Новый, переоткрытий: 0\n",
+      "actual_stdout": "История корректна: Новый, переоткрытий: 0\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true,
+      "kind": "дымовая"
+    },
+    {
+      "stdin": "11\nnew\nassigned\nfixed\nreopened\nassigned\nfixed\nreopened\nassigned\nfixed\nverified\nclosed\n",
+      "expected_stdout": "История корректна: Закрыт, переоткрытий: 2\n",
+      "actual_stdout": "История корректна: Закрыт, переоткрытий: 2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true,
+      "kind": "регрессионная"
+    }
+  ]
+}

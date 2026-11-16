@@ -1,0 +1,93 @@
+{
+  "stepId": 4123,
+  "source_sha256": "ed467651bec7bd9da29427ab639a18d3854a73dd852259e21bc07f68e91fa369",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_merge_sorted"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "1 3 5\n2 4 6\n",
+      "expected_stdout": "Результат: 1 2 3 4 5 6\n",
+      "actual_stdout": "Результат: 1 2 3 4 5 6\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 2 2\n2 3\n",
+      "expected_stdout": "Результат: 1 2 2 2 3\n",
+      "actual_stdout": "Результат: 1 2 2 2 3\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n4 5\n",
+      "expected_stdout": "Результат: 4 5\n",
+      "actual_stdout": "Результат: 4 5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n\n",
+      "expected_stdout": "Результат: пусто\n",
+      "actual_stdout": "Результат: пусто\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-3 0\n-5 10\n",
+      "expected_stdout": "Результат: -5 -3 0 10\n",
+      "actual_stdout": "Результат: -5 -3 0 10\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 1\n2\n",
+      "expected_stdout": "Ошибка: первый список не отсортирован\n",
+      "actual_stdout": "Ошибка: первый список не отсортирован\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 2\n5 4\n",
+      "expected_stdout": "Ошибка: второй список не отсортирован\n",
+      "actual_stdout": "Ошибка: второй список не отсортирован\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "4 5\n\n",
+      "expected_stdout": "Результат: 4 5\n",
+      "actual_stdout": "Результат: 4 5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3 1\n5 4\n",
+      "expected_stdout": "Ошибка: первый список не отсортирован\n",
+      "actual_stdout": "Ошибка: первый список не отсортирован\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 1\n1 1\n",
+      "expected_stdout": "Результат: 1 1 1 1\n",
+      "actual_stdout": "Результат: 1 1 1 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

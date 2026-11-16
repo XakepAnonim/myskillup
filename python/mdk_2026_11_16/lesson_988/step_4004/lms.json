@@ -1,0 +1,11 @@
+{
+  "lessonId": 988,
+  "stepId": 4004,
+  "title": "Задание 2. Рейтинг по баллам",
+  "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=988&stepId=4004",
+  "accepted": true,
+  "result": "Результат\nУспешно\nПройдено 5 из 5 тестов\n14 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый",
+  "serverTestsPassed": 5,
+  "points": 100,
+  "scoreVerifiedAfterReopeningLesson": true
+}

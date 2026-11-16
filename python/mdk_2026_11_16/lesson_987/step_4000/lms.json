@@ -1,0 +1,11 @@
+{
+  "lessonId": 987,
+  "stepId": 4000,
+  "title": "Задание 6. Сжатие строки: кодирование и обратное преобразование",
+  "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=987&stepId=4000",
+  "accepted": true,
+  "result": "Результат\nУспешно\nПройдено 7 из 7 тестов\n85 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый",
+  "serverTestsPassed": 7,
+  "points": 100,
+  "scoreVerifiedAfterReopeningLesson": true
+}

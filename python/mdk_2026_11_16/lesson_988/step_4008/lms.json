@@ -1,0 +1,11 @@
+{
+  "lessonId": 988,
+  "stepId": 4008,
+  "title": "Задание 6. Дефект в top_n: тесты, исправление, регрессия",
+  "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=988&stepId=4008",
+  "accepted": true,
+  "result": "Результат\nУспешно\nПройдено 6 из 6 тестов\n13 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый",
+  "serverTestsPassed": 6,
+  "points": 100,
+  "scoreVerifiedAfterReopeningLesson": true
+}

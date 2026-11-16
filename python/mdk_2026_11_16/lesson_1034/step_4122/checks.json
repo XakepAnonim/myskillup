@@ -1,0 +1,101 @@
+{
+  "stepId": 4122,
+  "source_sha256": "706852f894392a9f2e486f15d07c71db7c097f78ff6c5b60a8d9429c497231d5",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_final_price"
+  ],
+  "doctest_attempted": 0,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "1000 15\n",
+      "expected_stdout": "К оплате: 850 коп.\n",
+      "actual_stdout": "К оплате: 850 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "999 10\n",
+      "expected_stdout": "К оплате: 900 коп.\n",
+      "actual_stdout": "К оплате: 900 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "500 0\n",
+      "expected_stdout": "К оплате: 500 коп.\n",
+      "actual_stdout": "К оплате: 500 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "500 100\n",
+      "expected_stdout": "К оплате: 0 коп.\n",
+      "actual_stdout": "К оплате: 0 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0 50\n",
+      "expected_stdout": "К оплате: 0 коп.\n",
+      "actual_stdout": "К оплате: 0 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1000 101\n",
+      "expected_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "actual_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1000 -5\n",
+      "expected_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "actual_stdout": "Ошибка: скидка должна быть от 0 до 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 10\n",
+      "expected_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "actual_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1 101\n",
+      "expected_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "actual_stdout": "Ошибка: цена не может быть отрицательной\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1 99\n",
+      "expected_stdout": "К оплате: 1 коп.\n",
+      "actual_stdout": "К оплате: 1 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "100000000000000000009 10\n",
+      "expected_stdout": "К оплате: 90000000000000000009 коп.\n",
+      "actual_stdout": "К оплате: 90000000000000000009 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

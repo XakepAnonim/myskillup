@@ -1,0 +1,133 @@
+{
+  "stepId": 4126,
+  "source_sha256": "30ea696f41780fd35716911f9d76901d85160e8038f1ad02f35f70c5ba0e711d",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_check_login"
+  ],
+  "doctest_attempted": 4,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "ivan_2007\n",
+      "expected_stdout": "Логин принят\n",
+      "actual_stdout": "Логин принят\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "abc\n",
+      "expected_stdout": "Логин принят\n",
+      "actual_stdout": "Логин принят\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "ab\n",
+      "expected_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "aaaaaaaaaaaaaaaa\n",
+      "expected_stdout": "Логин принят\n",
+      "actual_stdout": "Логин принят\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "aaaaaaaaaaaaaaaaa\n",
+      "expected_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2ivan\n",
+      "expected_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "иван\n",
+      "expected_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "ivan-petrov\n",
+      "expected_stdout": "Ошибка: допустимы только латинские буквы, цифры и _\n",
+      "actual_stdout": "Ошибка: допустимы только латинские буквы, цифры и _\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1-\n",
+      "expected_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stdout": "Ошибка: длина логина от 3 до 16 символов\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2ив\n",
+      "expected_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "aиван\n",
+      "expected_stdout": "Ошибка: допустимы только латинские буквы, цифры и _\n",
+      "actual_stdout": "Ошибка: допустимы только латинские буквы, цифры и _\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "abc \n",
+      "expected_stdout": "Ошибка: допустимы только латинские буквы, цифры и _\n",
+      "actual_stdout": "Ошибка: допустимы только латинские буквы, цифры и _\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "_ab\n",
+      "expected_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stdout": "Ошибка: логин должен начинаться с латинской буквы\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "Z_9\n",
+      "expected_stdout": "Логин принят\n",
+      "actual_stdout": "Логин принят\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

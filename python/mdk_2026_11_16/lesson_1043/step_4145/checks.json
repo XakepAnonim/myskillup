@@ -1,0 +1,53 @@
+{
+  "stepId": 4145,
+  "source_sha256": "212ae94ad7f628ee5414dcdfec7593c30e5d4feec9487870264acd2bc451a154",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_summary"
+  ],
+  "doctest_attempted": 2,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "4\n17 new critical\n18 closed critical\n19 fixed minor\n23 reopened critical\n",
+      "expected_stdout": "Открытых: 3\ncritical: 2, major: 0, minor: 1, trivial: 0\nРелиз: нельзя, блокеры: 17, 23\n",
+      "actual_stdout": "Открытых: 3\ncritical: 2, major: 0, minor: 1, trivial: 0\nРелиз: нельзя, блокеры: 17, 23\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3\n5 assigned major\n6 verified critical\n7 new trivial\n",
+      "expected_stdout": "Открытых: 2\ncritical: 0, major: 1, minor: 0, trivial: 1\nРелиз: можно\n",
+      "actual_stdout": "Открытых: 2\ncritical: 0, major: 1, minor: 0, trivial: 1\nРелиз: можно\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "expected_stdout": "Открытых: 0\ncritical: 0, major: 0, minor: 0, trivial: 0\nРелиз: можно\n",
+      "actual_stdout": "Открытых: 0\ncritical: 0, major: 0, minor: 0, trivial: 0\nРелиз: можно\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\n1 new major\n2 open minor\n",
+      "expected_stdout": "Ошибка в строке 2: неизвестный статус\n",
+      "actual_stdout": "Ошибка в строке 2: неизвестный статус\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1\n9 new\n",
+      "expected_stdout": "Ошибка в строке 1: ожидается три поля\n",
+      "actual_stdout": "Ошибка в строке 1: ожидается три поля\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

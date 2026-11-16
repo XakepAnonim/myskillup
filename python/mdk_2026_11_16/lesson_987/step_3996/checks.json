@@ -1,0 +1,93 @@
+{
+  "stepId": 3996,
+  "source_sha256": "b659b94edae5d0f678f84469f7f9e2a79e1513fd6a6cd1972240a31002fbf50e",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_grade"
+  ],
+  "doctest_attempted": 3,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "0\n",
+      "expected_stdout": "Оценка: 2\n",
+      "actual_stdout": "Оценка: 2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "49\n",
+      "expected_stdout": "Оценка: 2\n",
+      "actual_stdout": "Оценка: 2\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "50\n",
+      "expected_stdout": "Оценка: 3\n",
+      "actual_stdout": "Оценка: 3\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "69\n",
+      "expected_stdout": "Оценка: 3\n",
+      "actual_stdout": "Оценка: 3\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "70\n",
+      "expected_stdout": "Оценка: 4\n",
+      "actual_stdout": "Оценка: 4\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "84\n",
+      "expected_stdout": "Оценка: 4\n",
+      "actual_stdout": "Оценка: 4\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "85\n",
+      "expected_stdout": "Оценка: 5\n",
+      "actual_stdout": "Оценка: 5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "100\n",
+      "expected_stdout": "Оценка: 5\n",
+      "actual_stdout": "Оценка: 5\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "101\n",
+      "expected_stdout": "Ошибка: баллы должны быть от 0 до 100\n",
+      "actual_stdout": "Ошибка: баллы должны быть от 0 до 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1\n",
+      "expected_stdout": "Ошибка: баллы должны быть от 0 до 100\n",
+      "actual_stdout": "Ошибка: баллы должны быть от 0 до 100\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

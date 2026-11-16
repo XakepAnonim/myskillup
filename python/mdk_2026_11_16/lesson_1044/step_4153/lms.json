@@ -1,0 +1,11 @@
+{
+  "lessonId": 1044,
+  "stepId": 4153,
+  "title": "Задание 5. Номер телефона: документация против кода",
+  "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=1044&stepId=4153",
+  "accepted": true,
+  "result": "Результат\nУспешно\nПройдено 7 из 7 тестов\n90 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый\nТест 6\nскрытый\nТест 7\nскрытый",
+  "serverTestsPassed": 7,
+  "points": 100,
+  "scoreVerifiedAfterReopeningLesson": true
+}

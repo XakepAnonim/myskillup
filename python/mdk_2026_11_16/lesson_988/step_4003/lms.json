@@ -1,0 +1,11 @@
+{
+  "lessonId": 988,
+  "stepId": 4003,
+  "title": "Задание 1. Начало, конец и разворот",
+  "url": "https://myskillup.ru/learn/courses/mdk-01-02-podderzhka-i-testirovanie-programmnyh-moduley?lessonId=988&stepId=4003",
+  "accepted": true,
+  "result": "Результат\nУспешно\nПройдено 5 из 5 тестов\n16 мс\nВывод\nОшибки\nТесты\nТест 1\nТест 2\nскрытый\nТест 3\nскрытый\nТест 4\nскрытый\nТест 5\nскрытый",
+  "serverTestsPassed": 5,
+  "points": 100,
+  "scoreVerifiedAfterReopeningLesson": true
+}

@@ -1,0 +1,101 @@
+{
+  "stepId": 4124,
+  "source_sha256": "2f89ce1228594239cd4d3a01b00f77f960a0caf5434dda75a2eedcf8f63a3117",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_to_clock"
+  ],
+  "doctest_attempted": 3,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "4505\n",
+      "expected_stdout": "01:15:05\n",
+      "actual_stdout": "01:15:05\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "expected_stdout": "00:00:00\n",
+      "actual_stdout": "00:00:00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "59\n",
+      "expected_stdout": "00:00:59\n",
+      "actual_stdout": "00:00:59\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3600\n",
+      "expected_stdout": "01:00:00\n",
+      "actual_stdout": "01:00:00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "86399\n",
+      "expected_stdout": "23:59:59\n",
+      "actual_stdout": "23:59:59\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "86400\n",
+      "expected_stdout": "Ошибка: секунды от 0 до 86399\n",
+      "actual_stdout": "Ошибка: секунды от 0 до 86399\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "-1\n",
+      "expected_stdout": "Ошибка: секунды от 0 до 86399\n",
+      "actual_stdout": "Ошибка: секунды от 0 до 86399\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "abc\n",
+      "expected_stdout": "Ошибка: нужно целое число\n",
+      "actual_stdout": "Ошибка: нужно целое число\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "60\n",
+      "expected_stdout": "00:01:00\n",
+      "actual_stdout": "00:01:00\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "3599\n",
+      "expected_stdout": "00:59:59\n",
+      "actual_stdout": "00:59:59\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "12.5\n",
+      "expected_stdout": "Ошибка: нужно целое число\n",
+      "actual_stdout": "Ошибка: нужно целое число\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

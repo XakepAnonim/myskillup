@@ -1,0 +1,47 @@
+Trying:
+    grade_stats("5 4 4 3")
+Expecting:
+    'оценок: 4, сумма: 16, среднее: 4.00'
+ok
+Trying:
+    grade_stats("4 4 5")
+Expecting:
+    'оценок: 3, сумма: 13, среднее: 4.33'
+ok
+Trying:
+    grade_stats("")
+Expecting:
+    'нет оценок'
+ok
+Trying:
+    grade_stats("2")
+Expecting:
+    'оценок: 1, сумма: 2, среднее: 2.00'
+ok
+Trying:
+    grade_stats(None)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: ожидается строка оценок
+ok
+Trying:
+    grade_stats(5)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    TypeError: ожидается строка оценок
+ok
+Trying:
+    grade_stats("5 6 4")
+Expecting:
+    'ошибка ввода'
+ok
+2 items had no tests:
+    solution
+    solution.test_grade_stats
+1 item passed all tests:
+   7 tests in solution.grade_stats
+7 tests in 3 items.
+7 passed.
+Test passed.

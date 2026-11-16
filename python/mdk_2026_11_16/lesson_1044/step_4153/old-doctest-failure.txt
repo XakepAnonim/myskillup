@@ -1,0 +1,8 @@
+**********************************************************************
+File "solution.py", line 3, in normalize_phone_old
+Failed example:
+    normalize_phone_old("8 (912) 345-67-89")
+Expected:
+    '+79123456789'
+Got:
+    '+7(912)3456789'

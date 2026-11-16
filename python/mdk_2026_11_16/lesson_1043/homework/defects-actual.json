@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "program": "normalize_phone_old",
+    "input": "8 (912) 345-67-89",
+    "expected": "+79123456789",
+    "actual": "+7(912)3456789",
+    "severity": "major",
+    "suggested_priority": "P2"
+  },
+  {
+    "id": 2,
+    "program": "top_n_buggy",
+    "input": {
+      "scores": [
+        70,
+        95,
+        80
+      ],
+      "n": 0
+    },
+    "expected": [],
+    "actual": [
+      95,
+      80,
+      70
+    ],
+    "severity": "major",
+    "suggested_priority": "P2"
+  },
+  {
+    "id": 3,
+    "program": "second_max_buggy",
+    "input": [
+      9,
+      9,
+      5
+    ],
+    "expected": 5,
+    "actual": 9,
+    "severity": "major",
+    "suggested_priority": "P2"
+  }
+]

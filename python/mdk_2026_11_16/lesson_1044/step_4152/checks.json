@@ -1,0 +1,61 @@
+{
+  "stepId": 4152,
+  "source_sha256": "6e8b28be8300b1151eafd6018c99dde8a22a5c2030be2b8d76cffd25dd3086c0",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_cart"
+  ],
+  "doctest_attempted": 6,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "2\nХлеб 4500 2\nМолоко 8990 1\n",
+      "expected_stdout": "Итого: 17990 коп.\n",
+      "actual_stdout": "Итого: 17990 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1\nРучка 2500 4\n",
+      "expected_stdout": "Итого: 10000 коп.\n",
+      "actual_stdout": "Итого: 10000 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "0\n",
+      "expected_stdout": "Итого: 0 коп.\n",
+      "actual_stdout": "Итого: 0 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\nПакет 0 3\nЧай 12000 1\n",
+      "expected_stdout": "Итого: 12000 коп.\n",
+      "actual_stdout": "Итого: 12000 коп.\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "2\nХлеб 4500 1\nСок 9900 0\n",
+      "expected_stdout": "Ошибка в строке 2: количество должно быть не меньше 1\n",
+      "actual_stdout": "Ошибка в строке 2: количество должно быть не меньше 1\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "1\nТорт -100 1\n",
+      "expected_stdout": "Ошибка в строке 1: цена не может быть отрицательной\n",
+      "actual_stdout": "Ошибка в строке 1: цена не может быть отрицательной\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

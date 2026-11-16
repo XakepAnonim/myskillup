@@ -1,0 +1,730 @@
+{
+  "date": "2026-11-16",
+  "acceptedProgrammingSteps": 33,
+  "confirmedPoints": 3300,
+  "serverTestsPassed": 227,
+  "localProgrammingCliChecks": 264,
+  "localHomeworkCliChecks": 25,
+  "localTestFunctions": 38,
+  "workingDoctestExamples": 105,
+  "expectedOldDoctestFailures": 2,
+  "programSources": 38,
+  "controlVariant": 1,
+  "repository": "https://github.com/XakepAnonim/myskillup",
+  "branch": "feature/mdk-2026-11-16",
+  "entries": [
+    {
+      "lessonId": 988,
+      "stepId": 4003,
+      "path": "python/mdk_2026_11_16/lesson_988/step_4003/solution.py",
+      "points": 100,
+      "serverTestsPassed": 5
+    },
+    {
+      "lessonId": 988,
+      "stepId": 4004,
+      "path": "python/mdk_2026_11_16/lesson_988/step_4004/solution.py",
+      "points": 100,
+      "serverTestsPassed": 5
+    },
+    {
+      "lessonId": 988,
+      "stepId": 4005,
+      "path": "python/mdk_2026_11_16/lesson_988/step_4005/solution.py",
+      "points": 100,
+      "serverTestsPassed": 5
+    },
+    {
+      "lessonId": 988,
+      "stepId": 4006,
+      "path": "python/mdk_2026_11_16/lesson_988/step_4006/solution.py",
+      "points": 100,
+      "serverTestsPassed": 5
+    },
+    {
+      "lessonId": 988,
+      "stepId": 4007,
+      "path": "python/mdk_2026_11_16/lesson_988/step_4007/solution.py",
+      "points": 100,
+      "serverTestsPassed": 5
+    },
+    {
+      "lessonId": 988,
+      "stepId": 4008,
+      "path": "python/mdk_2026_11_16/lesson_988/step_4008/solution.py",
+      "points": 100,
+      "serverTestsPassed": 6
+    },
+    {
+      "lessonId": 987,
+      "stepId": 3995,
+      "path": "python/mdk_2026_11_16/lesson_987/step_3995/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 987,
+      "stepId": 3996,
+      "path": "python/mdk_2026_11_16/lesson_987/step_3996/solution.py",
+      "points": 100,
+      "serverTestsPassed": 10
+    },
+    {
+      "lessonId": 987,
+      "stepId": 3997,
+      "path": "python/mdk_2026_11_16/lesson_987/step_3997/solution.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 987,
+      "stepId": 3998,
+      "path": "python/mdk_2026_11_16/lesson_987/step_3998/solution.py",
+      "points": 100,
+      "serverTestsPassed": 6
+    },
+    {
+      "lessonId": 987,
+      "stepId": 3999,
+      "path": "python/mdk_2026_11_16/lesson_987/step_3999/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 987,
+      "stepId": 4000,
+      "path": "python/mdk_2026_11_16/lesson_987/step_4000/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1034,
+      "stepId": 4117,
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4117/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1034,
+      "stepId": 4118,
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4118/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1034,
+      "stepId": 4120,
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4120/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1034,
+      "stepId": 4121,
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4121/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1034,
+      "stepId": 4122,
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4122/solution.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 1034,
+      "stepId": 4123,
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4123/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1044,
+      "stepId": 4149,
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4149/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1044,
+      "stepId": 4150,
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4150/solution.py",
+      "points": 100,
+      "serverTestsPassed": 10
+    },
+    {
+      "lessonId": 1044,
+      "stepId": 4151,
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4151/solution.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 1044,
+      "stepId": 4152,
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4152/solution.py",
+      "points": 100,
+      "serverTestsPassed": 6
+    },
+    {
+      "lessonId": 1044,
+      "stepId": 4153,
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4153/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1044,
+      "stepId": 4154,
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4154/solution.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1035,
+      "stepId": 4124,
+      "path": "kr_2_5/v1_task1.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 1035,
+      "stepId": 4125,
+      "path": "kr_2_5/v1_task2.py",
+      "points": 100,
+      "serverTestsPassed": 7
+    },
+    {
+      "lessonId": 1035,
+      "stepId": 4126,
+      "path": "kr_2_5/v1_task3.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 1043,
+      "stepId": 4141,
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4141/solution.py",
+      "points": 100,
+      "serverTestsPassed": 6
+    },
+    {
+      "lessonId": 1043,
+      "stepId": 4142,
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4142/solution.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 1043,
+      "stepId": 4143,
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4143/solution.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 1043,
+      "stepId": 4144,
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4144/solution.py",
+      "points": 100,
+      "serverTestsPassed": 8
+    },
+    {
+      "lessonId": 1043,
+      "stepId": 4145,
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4145/solution.py",
+      "points": 100,
+      "serverTestsPassed": 5
+    },
+    {
+      "lessonId": 1043,
+      "stepId": 4146,
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4146/solution.py",
+      "points": 100,
+      "serverTestsPassed": 5
+    }
+  ],
+  "files": [
+    {
+      "path": "kr_2_5/README.txt",
+      "sha256": "b95ecddf00c32fef5a57b5f4f25ca68a2259d7416885a29850868ac3ccf0bbcf"
+    },
+    {
+      "path": "kr_2_5/homework/checks.json",
+      "sha256": "f2b3038c8dae58a8048d4d270e2042f30b5c6bcad2939b2b4f6bcd0e3160a461"
+    },
+    {
+      "path": "kr_2_5/homework/v2_task1.py",
+      "sha256": "06cd9e9ee01335cdc1fa47fbb8e55e7c34ecdde998387a94b5054bdb66e38ffa"
+    },
+    {
+      "path": "kr_2_5/v1_task1.py",
+      "sha256": "2f89ce1228594239cd4d3a01b00f77f960a0caf5434dda75a2eedcf8f63a3117"
+    },
+    {
+      "path": "kr_2_5/v1_task1_checks.json",
+      "sha256": "5845a07658d515e750cdf0e6ef4d989d9c71e0c8c52b52a7998f76e83274d61f"
+    },
+    {
+      "path": "kr_2_5/v1_task1_lms.json",
+      "sha256": "357ff04f14f895e37af6aba9f51c98c15c114dd3dcbc7e1fb23116fe369c32c4"
+    },
+    {
+      "path": "kr_2_5/v1_task2.py",
+      "sha256": "6d5642cfea7fd323d412bd42c1dd3b9487fd7d5c046a4583eee8c7f737caef18"
+    },
+    {
+      "path": "kr_2_5/v1_task2_checks.json",
+      "sha256": "acc221d02a311fe00a0fb8bcc3785f3202d4100a3feb34cc4c6e16d3f221f48d"
+    },
+    {
+      "path": "kr_2_5/v1_task2_lms.json",
+      "sha256": "c1d5d49d3c1939c44f1e60a5998e6a7b553fb8fa455344b188ef23db9317b1eb"
+    },
+    {
+      "path": "kr_2_5/v1_task3.py",
+      "sha256": "30ea696f41780fd35716911f9d76901d85160e8038f1ad02f35f70c5ba0e711d"
+    },
+    {
+      "path": "kr_2_5/v1_task3_checks.json",
+      "sha256": "081372e7b9611dda72b2f380b82bd6acb06fc7f75b471ba3c6703485d6b62583"
+    },
+    {
+      "path": "kr_2_5/v1_task3_lms.json",
+      "sha256": "fa56d5eed6546043696e7dd6e38014cf1dd7c85848abf929a6690a3db1daa306"
+    },
+    {
+      "path": "python/mdk_2026_11_16/README.txt",
+      "sha256": "4b0fbd4b6795774df28b6d8fe103da2c8f5c2379312caed22ae53cbb0228c1dc"
+    },
+    {
+      "path": "python/mdk_2026_11_16/SHA256SUMS",
+      "sha256": "e8836863f92804f565490d01b381aab9e878a98cf7585c3fcdec4fd70a80be0b"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/homework/checks.json",
+      "sha256": "1f0f15ec2fca5ee9e1137d3d9fa416d1088b8fd1c47db18999727a0d54b735e8"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/homework/doctest-actual.txt",
+      "sha256": "c7ead68b72a0b5e73da017cae7cd311da9c6df8acf473414f31bf3b3b9908dec"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/homework/solution.py",
+      "sha256": "79f84dd341083971ac9e312870ec1be3ce6c5ad86840694d3e1c446555e78925"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4117/checks.json",
+      "sha256": "c0b5d2d22961a2e9011febd6b1dd18170158da3c1ebf58fdac47e5f0e70040d5"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4117/lms.json",
+      "sha256": "c5c0f1e2cb184f1459564c8c484cd9f1671afa1afbb2e51e6049819ac209bd04"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4117/solution.py",
+      "sha256": "d4d8fc7c2d9a8f16decfa2f39aa91de7ba3a1578cc6b277da7b0d283114692c3"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4118/checks.json",
+      "sha256": "49f1baf5478c2d743ae76041d421f9606ed9d3b71b5932dc310c461425fbc0af"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4118/lms.json",
+      "sha256": "6a703c3e99948c87e5bb1fe3dd838efd210dc0239a6900cb490910e64fcaebcf"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4118/solution.py",
+      "sha256": "88a4645d7b1fe12587db0628142136b2722e38786ce20dd64d752a99fafe97e3"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4120/checks.json",
+      "sha256": "734a3615ee1386fddb44e8b20ecd91174dec02caa9eba22b13ffa7972db5cecb"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4120/lms.json",
+      "sha256": "e8db0a9b0b894d3b834565ac474a1112fb2151c785808024c802ba8a9b1a6929"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4120/solution.py",
+      "sha256": "4c72b1c704583b0b15280f8ca81da5fb49199fda70b3dc421866b8e8854ac957"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4121/checks.json",
+      "sha256": "494803220a81d82cf8040d6847770d34ddd765a5bb089ed4bc38110bbbd2394f"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4121/lms.json",
+      "sha256": "3590717357f7569714abe0ab8cabf613c18bed17c3a287966fe3b907538f8fe8"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4121/solution.py",
+      "sha256": "4fd5068d328858a718680078c68d9de90eb17f6c2be717d9b0a1d40e9a7c6baa"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4122/checks.json",
+      "sha256": "f89e33acddb42e230c935faf0daad92f33c643444b0ad6c562762705dab601a4"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4122/lms.json",
+      "sha256": "0dd2c6faf77c5efd5f1d0ab7fb9f5a3ecba0146ddd5a1a81af1ca710ea4d63d8"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4122/solution.py",
+      "sha256": "706852f894392a9f2e486f15d07c71db7c097f78ff6c5b60a8d9429c497231d5"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4123/checks.json",
+      "sha256": "f31d4ab27eeda3a9dc3f1f14c5f795ed28725af6ceb44d83224b6d062c747043"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4123/lms.json",
+      "sha256": "8f249ca34066677810e8acf9217f5284105d6484fe2ab5f1822481a0bccb4dd1"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1034/step_4123/solution.py",
+      "sha256": "ed467651bec7bd9da29427ab639a18d3854a73dd852259e21bc07f68e91fa369"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/homework/checks.json",
+      "sha256": "4fef0eab105d80b28bd3a4944e622bd37aebe4d6f2b498ce05bf9ca3c4a74a2c"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/homework/defects-actual.json",
+      "sha256": "a8e204776ecf57fbd100039b77266cc4a3a97cd1dcf4c63b71f9915673e36acb"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/homework/report.txt",
+      "sha256": "50da073d57abe401736b1f1de922a16765732bec509a0d290c6972573ed863e4"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4141/checks.json",
+      "sha256": "7ff87e8f1d7de1d7e3e89f4a0e94f03b55306cb4ad79d9eb5cc156e3523a8bcc"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4141/lms.json",
+      "sha256": "c252719501c0e8d97e6ea874041f2c78ec9bdb898ae9e5bca09789c178db77e3"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4141/solution.py",
+      "sha256": "dca3ef7c3eac8f7fc1c9401282551d9626492191120eb4f210e811eb01fd2606"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4142/checks.json",
+      "sha256": "441fe17efda076f641299e0155f0b9a54eaa6fc27c946e8455f5ebe25f1ab8df"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4142/lms.json",
+      "sha256": "1b84abbdf83448fa752231e0dbc32cea682f00f611d33b680f62371a4f7e314a"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4142/solution.py",
+      "sha256": "6362167ae6927cb74b27bd34edb418bd4997ef377bdbdc75583bf5f37e30a312"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4143/checks.json",
+      "sha256": "d19e07cd89f6439c2102605cbffec2fd1b8ff1e29a8d977791c04c499c043f77"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4143/lms.json",
+      "sha256": "789299716c59ba6d4a10d9cb288ba5fb5f1b1ec46dbabd4bf18ccb414b17e744"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4143/solution.py",
+      "sha256": "ff9f1ff9ef5132b1da71ce8344ea6cec75bdd93280c51d80a39a191def3e4306"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4144/checks.json",
+      "sha256": "4761e077d08aacc390bb1037f9580f68b2e3464d99a38f8ad70a148c4f3f9aa3"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4144/lms.json",
+      "sha256": "38b48a937f5cce320b5326e15039cfb241a441ab6dec297a186a287d2bef7d4b"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4144/solution.py",
+      "sha256": "326a9d6bab2b8e481fd8e75d475770432023b83fca16c235a609b270f54dabcc"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4145/checks.json",
+      "sha256": "170066c39c06dc7fdaeafef82cf1bad8238ddeef2f18471e8f5811594847f5c6"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4145/lms.json",
+      "sha256": "2584c51a795c7d24a8eee69e03fbb2f517a8e93ff19c962cb544e203f2f71914"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4145/solution.py",
+      "sha256": "212ae94ad7f628ee5414dcdfec7593c30e5d4feec9487870264acd2bc451a154"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4146/checks.json",
+      "sha256": "0e1ec2c1937edc1d4753ad626925cad66fb510284358df966a1a41b1e72f3c78"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4146/lms.json",
+      "sha256": "f8215638a78cefab638ea0ef73d71d0c330dbd8c6428276f32163b1668a52006"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1043/step_4146/solution.py",
+      "sha256": "16695114bbc4b8c259e059f8b95bd9119f4a31a8764a4a0487444d5e97182ef2"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/homework/checks.json",
+      "sha256": "c7473c010a7a459e573a6896af69129f40fa58e838562b38cf996c449519a8a9"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/homework/doctest-actual.txt",
+      "sha256": "c7ead68b72a0b5e73da017cae7cd311da9c6df8acf473414f31bf3b3b9908dec"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/homework/solution.py",
+      "sha256": "79f84dd341083971ac9e312870ec1be3ce6c5ad86840694d3e1c446555e78925"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4149/checks.json",
+      "sha256": "68dd93e01ab2620d2279afe3a1c0d0216e5b94e1046df07d3ee9fc95f5e781fc"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4149/lms.json",
+      "sha256": "fac66669fc36e75d931226ce030d9eda37fc7cfa74bb592e1f9099477c611744"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4149/solution.py",
+      "sha256": "168d31e882ff681cd6e00a93ffc983d4e0acc7fa88a2bf7f7577a0ce2efc8ea7"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4150/checks.json",
+      "sha256": "f5e9e8060966f0783af05075e90ac2f4385037a1b0881e5d5064a71a034be43c"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4150/lms.json",
+      "sha256": "92beee77e0391df4b9c0b9415cc9f5742c0740924115ed4a902efc24facd65c7"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4150/solution.py",
+      "sha256": "b659b94edae5d0f678f84469f7f9e2a79e1513fd6a6cd1972240a31002fbf50e"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4151/checks.json",
+      "sha256": "cb2021aacf4454aa8d56d52f2622e5287c48a8997ad45b0ac58ce791764b3d5c"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4151/lms.json",
+      "sha256": "9cbb3066271ce9f35cafe4856decb4d97b65b429045d3c5d227c8a39dce4197b"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4151/solution.py",
+      "sha256": "9a19ce94af1c1e9e139fcd7eea2134aad23f1b225ff4580cfe3b8f4277edbab9"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4152/checks.json",
+      "sha256": "8d29251c53142ac6b20abf5709604eac53a01d8e678c3dc8b52496a2b8231673"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4152/lms.json",
+      "sha256": "7d1cb06a1b5df287d0c7f1da73281b99241bfd1d396853d930b5f9d0474f27e3"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4152/solution.py",
+      "sha256": "6e8b28be8300b1151eafd6018c99dde8a22a5c2030be2b8d76cffd25dd3086c0"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4153/checks.json",
+      "sha256": "a2f2a7a43299b2a21982c6e7315c0486f5df2c9650674aa1964916d94a8cea6f"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4153/lms.json",
+      "sha256": "0a7a65626af50a2ce17670ec9954b59acd75a871dcffd2210835c599eb95182d"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4153/old-doctest-failure.txt",
+      "sha256": "a338e325db673a37c51cca8a895130d70f99d6ae2187eb9aa521d71fd5408f40"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4153/solution.py",
+      "sha256": "121d48bb6595d2053ef45f92717ad25f53d3359f1597abe560fc7c83330e5172"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4154/checks.json",
+      "sha256": "18dffdc8af897f4e6e47bc97742d161e7930047195ecc891f25a459c92fa2818"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4154/lms.json",
+      "sha256": "ed0549ee18ada10fe8dedf47bcf2b69e7af3398856de6556f295f4a6623e895f"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_1044/step_4154/solution.py",
+      "sha256": "a6239b9c5e3628551415282d581eedcf483441bafaee70bc50ab14ed2c1a040a"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/homework/checks.json",
+      "sha256": "80900370ef3b314c9664cb71e6540ebf7aeab0e0bdaf9d77512d2b9502b48060"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/homework/doctest-actual.txt",
+      "sha256": "c7ead68b72a0b5e73da017cae7cd311da9c6df8acf473414f31bf3b3b9908dec"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/homework/solution.py",
+      "sha256": "79f84dd341083971ac9e312870ec1be3ce6c5ad86840694d3e1c446555e78925"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3995/checks.json",
+      "sha256": "e7fd5003482b3984b4a138bbe8afc2c6becf0b77e95fcbd178db1e14a5d0d8eb"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3995/lms.json",
+      "sha256": "be31e1ff79a6b94ce4259c0ec0898da9d38669abc97a43daea0fd186b7982f1d"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3995/solution.py",
+      "sha256": "168d31e882ff681cd6e00a93ffc983d4e0acc7fa88a2bf7f7577a0ce2efc8ea7"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3996/checks.json",
+      "sha256": "9dd4ff5609b0fe93daba37f3a4ad14c0ed1d995d71f23f8e9fe9bf6b0f564345"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3996/lms.json",
+      "sha256": "71d82e55104df818a991751b7a41779b7561ba5c7fa16cd724da823df4ea1cde"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3996/solution.py",
+      "sha256": "b659b94edae5d0f678f84469f7f9e2a79e1513fd6a6cd1972240a31002fbf50e"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3997/checks.json",
+      "sha256": "f68801929521d693a3bb1c2fa57fa5852d8a5377540cdda803f189b303cbc7d6"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3997/lms.json",
+      "sha256": "0f0c8b3ca2bcdd5b5e33eca41678788a046868b6a45c161940da3071fb6f7ecd"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3997/solution.py",
+      "sha256": "9a19ce94af1c1e9e139fcd7eea2134aad23f1b225ff4580cfe3b8f4277edbab9"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3998/checks.json",
+      "sha256": "bce56a4f1c8c8e929ef62530d81b2d080228ac059f16c6d82d56090c6d88245e"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3998/lms.json",
+      "sha256": "305232055fed59eae3d9e7437c75441c35f31e000419ea89dee570824ef878b7"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3998/solution.py",
+      "sha256": "6e8b28be8300b1151eafd6018c99dde8a22a5c2030be2b8d76cffd25dd3086c0"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3999/checks.json",
+      "sha256": "91425970ddab184f660ff861dcb205166a05b5b7ebb983ed3775f628b0804887"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3999/lms.json",
+      "sha256": "7abf2faff2684a01c61c3b6379afb5a8b63baefca58481119838435d3e5384fb"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3999/old-doctest-failure.txt",
+      "sha256": "a338e325db673a37c51cca8a895130d70f99d6ae2187eb9aa521d71fd5408f40"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_3999/solution.py",
+      "sha256": "121d48bb6595d2053ef45f92717ad25f53d3359f1597abe560fc7c83330e5172"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_4000/checks.json",
+      "sha256": "b779b389c7e2b27d2e81b9037ff41fc95f002ece437115aa6fe6ac3bb4ecf64f"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_4000/lms.json",
+      "sha256": "c6799d5a8063ff7b508f614f4ff9edf4968bb045ced4e8adedabd896e73c17e5"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_987/step_4000/solution.py",
+      "sha256": "a6239b9c5e3628551415282d581eedcf483441bafaee70bc50ab14ed2c1a040a"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/homework/checks.json",
+      "sha256": "be8eae5d5637a63840706495a654220c01c3b5489aeda6f38e83b2b00e362f27"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/homework/solution.py",
+      "sha256": "5b26525c7131aca0abb1309a5197477c862746a4007da0bd89b1963312169803"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4003/checks.json",
+      "sha256": "3ba064c9add144ed60530a83417d8a45fe093d1001ffdabc384e75d85ed4e947"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4003/lms.json",
+      "sha256": "7993873579500140bbd5d5d7c11d7e32d948c23d13822f371b90754600c8cc35"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4003/solution.py",
+      "sha256": "a1a7c737767e6cf81472f72a552df590ff043a372261dcda579be8afb0ebcb0a"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4004/checks.json",
+      "sha256": "25eecc0cfecec084f2c6f40c9d420a366c1d5424a52446c70fdfcb5f494dc898"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4004/lms.json",
+      "sha256": "1511b426fe77a8c89a04f39725117beb526e3e89f222dc6dd0a0548f316082f1"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4004/solution.py",
+      "sha256": "91a4fb1842b8c7bfc4da9689324263df7607727572de54cfe6b4adede51665c1"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4005/checks.json",
+      "sha256": "f2dfb433ae6699f81674b29c7694b33593a6718699a37b11f09e64ade466b501"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4005/lms.json",
+      "sha256": "74e63cdce7aad0c33e1802608e53cb61a6ab4a09cb45d6b695008102d60877d7"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4005/solution.py",
+      "sha256": "7fa44c46184c0e159127e5be5378871686688a89b696d5819eaac772a725ed4d"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4006/checks.json",
+      "sha256": "51b1545736692dd953d482319f6f08fb6b5ba7bf8141c243e29c941f71231c64"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4006/lms.json",
+      "sha256": "6d1502a8c3e41191df1650f93956cff4c2e34eb94a89d2ae09353619ef310eeb"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4006/solution.py",
+      "sha256": "99f284090c516c8431fe952d38999939a7716cea7b8b3ec1b6fa3675ccb403c7"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4007/checks.json",
+      "sha256": "28fb1317f86f89e495690d934bd47ffcdc1457dc0a6baa7bac7d72497498f7a1"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4007/lms.json",
+      "sha256": "d4d4e80aac6206d501caac3946df152cad149415ba761976a313b8bc4227b489"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4007/solution.py",
+      "sha256": "3d6bea63711d698390790d0bdd1845dbf2c7e4f83dd2cca7e61c04f0e386266b"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4008/checks.json",
+      "sha256": "40179b57d6aff5e1c6f87bf85cf7a0d45ce54b88e78e09c700f6bd9ca567e13c"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4008/lms.json",
+      "sha256": "850911cbdf894a4b799e1248d7695715c9c552d95d8a0147d59e361d3733bb0f"
+    },
+    {
+      "path": "python/mdk_2026_11_16/lesson_988/step_4008/solution.py",
+      "sha256": "80ad14873abd3e55de8b3eba8d6f475536221907e7b0513a21d2b845f35b8463"
+    }
+  ]
+}

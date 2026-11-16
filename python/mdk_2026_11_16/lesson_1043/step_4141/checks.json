@@ -1,0 +1,61 @@
+{
+  "stepId": 4141,
+  "source_sha256": "dca3ef7c3eac8f7fc1c9401282551d9626492191120eb4f210e811eb01fd2606",
+  "python_version": "3.14.7",
+  "test_functions_passed": [
+    "test_status_name"
+  ],
+  "doctest_attempted": 2,
+  "doctest_failed": 0,
+  "starter_comments_preserved": true,
+  "cli": [
+    {
+      "stdin": "new\n",
+      "expected_stdout": "Статус: Новый\n",
+      "actual_stdout": "Статус: Новый\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "verified\n",
+      "expected_stdout": "Статус: Проверен\n",
+      "actual_stdout": "Статус: Проверен\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "REOPENED\n",
+      "expected_stdout": "Статус: Переоткрыт\n",
+      "actual_stdout": "Статус: Переоткрыт\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": " duplicate \n",
+      "expected_stdout": "Статус: Дубликат\n",
+      "actual_stdout": "Статус: Дубликат\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "done\n",
+      "expected_stdout": "Ошибка: неизвестный статус\n",
+      "actual_stdout": "Ошибка: неизвестный статус\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    },
+    {
+      "stdin": "\n",
+      "expected_stdout": "Ошибка: неизвестный статус\n",
+      "actual_stdout": "Ошибка: неизвестный статус\n",
+      "actual_stderr": "",
+      "actual_exit_code": 0,
+      "passed": true
+    }
+  ]
+}
